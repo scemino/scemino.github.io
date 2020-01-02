@@ -1,6 +1,6 @@
 theme: jekyll-theme-architect
 title: A blog about engge game engine
-logo: https://i.imgur.com/En75Mzx.png
+logo: /assets/img/logo.png
 show_downloads: true
 
 # Disqus Comments
