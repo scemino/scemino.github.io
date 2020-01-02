@@ -1,4 +1,8 @@
 theme: jekyll-theme-architect
+title: A blog about engge game engine
+logo: https://i.imgur.com/En75Mzx.png
+show_downloads: true
+
 # Disqus Comments
 disqus:
     # Leave shortname blank to disable comments site-wide.
