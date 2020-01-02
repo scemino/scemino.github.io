@@ -12,7 +12,12 @@ First I have to explain what is pathfinding and walkboxes.
 
 What is a walkbox ? A walbox is a polygon where an actor (a character of the game) is able to walk.
 For example, in this video, you can see that Delores follows the path to the vista and she is restricted to this path, it's not possible to walk on the grass.
-![alt](/assets/video/path.webm)
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="/assets/videos/path.webm" type="video/webm">
+  </video>
+</figure>
 
 ## How a walkbox is defined
 
@@ -34,7 +39,7 @@ This part is easy to understand, each walkbox is composed by a polygon, and each
 
 With engge, you can display these walkboxes with the debug tools:
 
-![alt](/assets/img/walkboxes1.png)
+![walkboxes1.png](/assets/img/walkboxes1.png)
 
 OK now we have several polygons, what's next ?
 Pathfinding of course.
@@ -46,19 +51,23 @@ Pathfinding of course.
 
 Here comes the tricky part, to acheive this I read a lot blogs and documentations, and here is a list of useful resources:
 
-* https://blog.thimbleweedpark.com/walkbox_video
-* http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/
-* https://www.david-gouveia.com/pathfinding-on-a-2d-polygonal-map
+* [Thimbleweed Park blog](https://blog.thimbleweedpark.com/walkbox_video)
+* [http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/](http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/)
+* [https://www.david-gouveia.com/pathfinding-on-a-2d-polygonal-map](https://www.david-gouveia.com/pathfinding-on-a-2d-polygonal-map)
 
 With this great help, the actor is able to move inside a concave polygon, that's great... **but** we don't have a big polygon, we have several adjacent polygons.
 
 After a long time, I found a magic library called [Clipper](https://sourceforge.net/projects/polyclipping/), this library can do a lot of things, but what I was looking for was a solution to merge several adjacent polygons.
 
 And here is the result:
-![alt](/assets/img/walkboxes2.png)
+![walkboxes2.png](/assets/img/walkboxes2.png)
 
 Not bad isn't it ?
 
-You can even see the pathfinding in action, I converted the code (described in http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/) from Haxe to C++ and I use the A* algorithm.
+You can even see the pathfinding in action, I converted the code (described in http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/) from Haxe to C++ and I use the link [A star](https://en.wikipedia.org/wiki/A*_search_algorithm) algorithm.
 
-![alt](/assets/video/path_finding.webm)
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="/assets/videos/path_finding.webm" type="video/webm">
+  </video>
+</figure>
