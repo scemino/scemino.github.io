@@ -1,7 +1,17 @@
-theme: jekyll-theme-architect
+# Site settings
 title: A blog about engge game engine
+email: scemino74@gmail.com
 logo: /assets/img/logo.png
 show_downloads: true
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: engge_the_game
+github_username:  scemino
+excerpt_separator: "<!--more-->"
+show_excerpts: true
+
+# Build settings
+theme: minima
 
 # Disqus Comments
 disqus:

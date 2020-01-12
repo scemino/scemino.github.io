@@ -7,6 +7,7 @@ title:  "Walkboxes & Pathfinding"
 
 These days (huh these months), I worked a lot of time on fixing my pathfinding in engge.
 First I have to explain what is pathfinding and walkboxes.
+<!--more-->
 
 ## Walkboxes
 
