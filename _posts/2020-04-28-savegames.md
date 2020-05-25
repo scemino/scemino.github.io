@@ -70,6 +70,16 @@ This format can be represented by a json struture, here is an example, a lot of 
   "inventory": {
     "slots": [
       {
+        "jiggle": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
         "objects": [
           "raysBadge",
           "raysNotebook",
