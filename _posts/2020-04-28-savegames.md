@@ -134,18 +134,20 @@ With this example:
 "callbacks": {
   "callbacks": [
     {
-      "function": "analyticsCallback",
-      "guid": 8000217,
-      "time": 29920
-    }
+        "function": "closeElevatorDelay",
+        "guid": 8000036,
+        "param": 5,
+        "time": 15186
+      }
   ],
   "nextGuid": 8000218
 },
 ```
-* function: name of the function to call when time is elapsed
-* guid: unique identifier of the callback
-* time: time in ms to wait before calling the callback
-* nextGuid: specify the identifier to use for the next callback
+* `function`: name of the function to call when time is elapsed
+* `param`: optional parameter given to the function when it is called
+* `guid`: unique identifier of the callback
+* `time`: time in ms to wait before calling the callback
+* `nextGuid`: specify the identifier to use for the next callback
 
 ### Dialogs
 
