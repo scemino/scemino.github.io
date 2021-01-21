@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Walkboxes & Pathfinding"
 ---
 
@@ -14,11 +14,7 @@ First I have to explain what is pathfinding and walkboxes.
 What is a walkbox ? A walbox is a polygon where an actor (a character of the game) is able to walk.
 For example, in this video, you can see that Delores follows the path to the vista and she is restricted to this path, it's not possible to walk on the grass.
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="/assets/videos/path.webm" type="video/webm">
-  </video>
-</figure>
+{% include video id="z23CeNXuSf0" provider="youtube" %}
 
 ## How a walkbox is defined
 
@@ -40,7 +36,7 @@ This part is easy to understand, each walkbox is composed by a polygon, and each
 
 With engge, you can display these walkboxes with the debug tools:
 
-![walkboxes1.png](/assets/img/walkboxes1.png)
+![walkboxes1.png](/assets/images/walkboxes1.png)
 
 OK now we have several polygons, what's next ?
 Pathfinding of course.
@@ -61,14 +57,10 @@ With this great help, the actor is able to move inside a concave polygon, that's
 After a long time, I found a magic library called [Clipper](https://sourceforge.net/projects/polyclipping/), this library can do a lot of things, but what I was looking for was a solution to merge several adjacent polygons.
 
 And here is the result:
-![walkboxes2.png](/assets/img/walkboxes2.png)
+![walkboxes2.png](/assets/images/walkboxes2.png)
 
 Not bad isn't it ?
 
 You can even see the pathfinding in action, I converted the code (described in http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/) from Haxe to C++ and I use the link [A star](https://en.wikipedia.org/wiki/A*_search_algorithm) algorithm.
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="/assets/videos/path_finding.webm" type="video/webm">
-  </video>
-</figure>
+{% include video id="ZoqC6v12HqY" provider="youtube" %}

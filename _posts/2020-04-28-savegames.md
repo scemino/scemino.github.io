@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Savegames"
 ---
 
@@ -7,7 +7,7 @@ Aaah savegames... Without them it's impossible to go through the whole game.
 In this post I will explain the internal format and the data used in these savegames.
 <!--more-->
 
-![savegames.png](/assets/img/savegames.png)
+![savegames.png](/assets/images/savegames.png)
 
 ## The format
 
