@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "Walkboxes & Pathfinding"
+tags: twp
 ---
 
 ## Pathfinding
