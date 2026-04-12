@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Scummvm Twp - Tag - </title>
+        <link>//localhost:1313/tags/scummvm-twp/</link>
+        <description>Scummvm Twp - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="//localhost:1313/tags/scummvm-twp/" rel="self" type="application/rss+xml" /><item>
+    <title>Thimbleweed Park in ScummVM</title>
+    <link>//localhost:1313/post/2024-04-15-scummvm/</link>
+    <pubDate>Mon, 15 Apr 2024 00:00:00 &#43;0000</pubDate>
+    <author>xxxx</author>
+    <guid>//localhost:1313/post/2024-04-15-scummvm/</guid>
+    <description><![CDATA[<p>Now it&rsquo;s official <code>Thimbleweed Park</code> is available in ScummVM 🎉</p>]]></description>
+</item>
+</channel>
+</rss>

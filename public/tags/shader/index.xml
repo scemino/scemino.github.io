@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shader on scemino blog</title>
+    <link>//localhost:1313/tags/shader/</link>
+    <description>Recent content in Shader on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/shader/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lighting</title>
+      <link>//localhost:1313/posts/2020-08-18-lighting/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2020-08-18-lighting/</guid>
+      <description>&lt;p&gt;This post is about lighting in Thimbleweed Park, I don&amp;rsquo;t know you, but I found the ligthing in Thimbleweed Park marvelous. It&amp;rsquo;s subtle and nice, when an actor is walking in front the arcade, his face becomes green and then pink due to the neons color.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

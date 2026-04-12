@@ -1,0 +1,47 @@
+theme = 'hello-friend-ng'
+title = "scemino blog"
+languageCode = "en-us"
+enableEmoji     = true
+disableRSS     = false
+
+[params]
+  enableSharingButtons = true
+  enableReadingTime = true
+
+  [params.author]
+    name = "Scemino"
+
+  [params.footer]
+    rss = true
+    copyright = false
+    author = true
+
+    topText = []
+    bottomText = []
+  
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/scemino"
+
+  
+[languages]
+  [languages.en]
+    title = "scemino blog"
+
+  [languages.en.params]
+    subtitle  = "A blog about my different projects"
+
+    [languages.en.params.logo]
+      logoText = "scemino blog"
+      logoCursorDisabled = true
+      logoHomeLink = "/posts"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Posts"
+    url        = "/posts"

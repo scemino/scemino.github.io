@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scummvm on scemino blog</title>
+    <link>//localhost:1313/tags/scummvm/</link>
+    <description>Recent content in Scummvm on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/scummvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thimbleweed Park in ScummVM</title>
+      <link>//localhost:1313/posts/2024-04-15-scummvm/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2024-04-15-scummvm/</guid>
+      <description>&lt;p&gt;Now it&amp;rsquo;s official &lt;code&gt;Thimbleweed Park&lt;/code&gt; is available in ScummVM 🎉&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

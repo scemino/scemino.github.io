@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Untagged on scemino blog</title>
+    <link>//localhost:1313/tags/untagged/</link>
+    <description>Recent content in Untagged on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Apr 2026 16:59:07 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>//localhost:1313/posts/2026-04-12-hugo/</link>
+      <pubDate>Sun, 12 Apr 2026 16:59:07 +0200</pubDate>
+      <guid>//localhost:1313/posts/2026-04-12-hugo/</guid>
+      <description>&lt;p&gt;I’ve been thinking about revamping my website for a while, and today I finally did it.&lt;/p&gt;&#xA;&lt;p&gt;Previously, I used the solution recommended by GitHub for creating a static website: Jekyll.&lt;/p&gt;&#xA;&lt;p&gt;What I liked about this solution was being able to write text with certain features like: formatting text, adding links, creating lists, inserting images, and syntax-highlighted code. In short, I had no complaints about that.&lt;/p&gt;&#xA;&lt;p&gt;What I liked least was the reliance on Ruby and its dependencies.&#xA;I started looking into other options and thought &lt;img src=&#34;https://gohugo.io/&#34; alt=&#34;Hugo&#34;&gt; seemed like an interesting alternative.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

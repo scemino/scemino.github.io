@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twp on scemino blog</title>
+    <link>//localhost:1313/tags/twp/</link>
+    <description>Recent content in Twp on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/twp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thimbleweed Park in ScummVM</title>
+      <link>//localhost:1313/posts/2024-04-15-scummvm/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2024-04-15-scummvm/</guid>
+      <description>&lt;p&gt;Now it&amp;rsquo;s official &lt;code&gt;Thimbleweed Park&lt;/code&gt; is available in ScummVM 🎉&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lighting</title>
+      <link>//localhost:1313/posts/2020-08-18-lighting/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2020-08-18-lighting/</guid>
+      <description>&lt;p&gt;This post is about lighting in Thimbleweed Park, I don&amp;rsquo;t know you, but I found the ligthing in Thimbleweed Park marvelous. It&amp;rsquo;s subtle and nice, when an actor is walking in front the arcade, his face becomes green and then pink due to the neons color.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Savegames</title>
+      <link>//localhost:1313/posts/2020-04-28-savegames/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2020-04-28-savegames/</guid>
+      <description>&lt;p&gt;Aaah savegames&amp;hellip; Without them it&amp;rsquo;s impossible to go through the whole game.&#xA;In this post I will explain the internal format and the data used in these savegames.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How engge and Thimblewed Park starts!</title>
+      <link>//localhost:1313/posts/2020-01-01-boot/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2020-01-01-boot/</guid>
+      <description>&lt;h2 id=&#34;the-boot-process&#34;&gt;The boot process&lt;/h2&gt;&#xA;&lt;p&gt;First thing first, engge use Thimbleweed park ggpack files, theses files are archives and contains all the resources: images, scripts, text files, music, sounds etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Walkboxes &amp; Pathfinding</title>
+      <link>//localhost:1313/posts/2020-01-01-pathfinding/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2020-01-01-pathfinding/</guid>
+      <description>&lt;h2 id=&#34;pathfinding&#34;&gt;Pathfinding&lt;/h2&gt;&#xA;&lt;p&gt;These days (huh these months), I worked a lot of time on fixing my pathfinding in engge.&#xA;First I have to explain what is pathfinding and walkboxes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

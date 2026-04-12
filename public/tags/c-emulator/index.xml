@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>C Emulator - Tag - </title>
+        <link>//localhost:1313/tags/c-emulator/</link>
+        <description>C Emulator - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="//localhost:1313/tags/c-emulator/" rel="self" type="application/rss+xml" /><item>
+    <title>Year 2023</title>
+    <link>//localhost:1313/post/2024-03-09-year2023/</link>
+    <pubDate>Sat, 09 Mar 2024 00:00:00 &#43;0000</pubDate>
+    <author>xxxx</author>
+    <guid>//localhost:1313/post/2024-03-09-year2023/</guid>
+    <description><![CDATA[<p>Here is a small summary of my projects of the year 2023.</p>]]></description>
+</item>
+</channel>
+</rss>

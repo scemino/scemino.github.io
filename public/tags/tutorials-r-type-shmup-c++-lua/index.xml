@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tutorials R-Type Shmup C&#43;&#43; Lua - Tag - </title>
+        <link>//localhost:1313/tags/tutorials-r-type-shmup-c&#43;&#43;-lua/</link>
+        <description>Tutorials R-Type Shmup C&#43;&#43; Lua - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 06 Jul 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="//localhost:1313/tags/tutorials-r-type-shmup-c&#43;&#43;-lua/" rel="self" type="application/rss+xml" /><item>
+    <title>Let&#39;s make a shoot-em-up! (Part II)</title>
+    <link>//localhost:1313/post/2021-07-06-rtype-code/</link>
+    <pubDate>Tue, 06 Jul 2021 00:00:00 &#43;0000</pubDate>
+    <author>xxxx</author>
+    <guid>//localhost:1313/post/2021-07-06-rtype-code/</guid>
+    <description><![CDATA[<p>After designing the level in the <a href="2021-05-21-r-type.md" rel="">first part</a>, let&rsquo;s go to the exciting world of coding.</p>]]></description>
+</item>
+</channel>
+</rss>

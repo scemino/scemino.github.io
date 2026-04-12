@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tutorials Squirrel Wimpy - Tag - </title>
+        <link>//localhost:1313/tags/tutorials-squirrel-wimpy/</link>
+        <description>Tutorials Squirrel Wimpy - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="//localhost:1313/tags/tutorials-squirrel-wimpy/" rel="self" type="application/rss+xml" /><item>
+    <title>How to create a room for Thimbleweed Park</title>
+    <link>//localhost:1313/post/2021-01-24-create-room/</link>
+    <pubDate>Sun, 24 Jan 2021 00:00:00 &#43;0000</pubDate>
+    <author>xxxx</author>
+    <guid>//localhost:1313/post/2021-01-24-create-room/</guid>
+    <description><![CDATA[<p>In this post I will explain how to create a room for <em>Thimbleweed Park</em>, more precisely I will create the Scumm Bar of <em>The Secret of Monkey Island</em>.</p>]]></description>
+</item>
+</channel>
+</rss>

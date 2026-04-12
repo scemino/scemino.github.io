@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on engge blog</title>
+    <link>//localhost:1313/post/</link>
+    <description>Recent content in Posts on engge blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thimbleweed Park in ScummVM</title>
+      <link>//localhost:1313/post/2024-04-15-scummvm/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2024-04-15-scummvm/</guid>
+      <description>&lt;p&gt;Now it&amp;rsquo;s official &lt;code&gt;Thimbleweed Park&lt;/code&gt; is available in ScummVM 🎉&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Year 2023</title>
+      <link>//localhost:1313/post/2024-03-09-year2023/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2024-03-09-year2023/</guid>
+      <description>&lt;p&gt;Here is a small summary of my projects of the year 2023.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Let&#39;s make a shoot-em-up! (Part II)</title>
+      <link>//localhost:1313/post/2021-07-06-rtype-code/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2021-07-06-rtype-code/</guid>
+      <description>&lt;p&gt;After designing the level in the &lt;a href=&#34;2021-05-21-r-type.md&#34;&gt;first part&lt;/a&gt;, let&amp;rsquo;s go to the exciting world of coding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Let&#39;s make a shoot-em-up!</title>
+      <link>//localhost:1313/post/2021-05-21-rtype/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2021-05-21-rtype/</guid>
+      <description>&lt;p&gt;After three years of development on &lt;a href=&#34;https://github.com/scemino/engge&#34;&gt;engge&lt;/a&gt;, I needed to play with something different. When I was young I was of course a fan of point&amp;rsquo;n&amp;rsquo;click adventure games, but shoot-em-up were also really famous at this time. Let&amp;rsquo;s make a shoot-em-up!&#xA;So let&amp;rsquo;s dive into this new adventure which is not a point&amp;rsquo;n&amp;rsquo;click ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to create a room for Thimbleweed Park</title>
+      <link>//localhost:1313/post/2021-01-24-create-room/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2021-01-24-create-room/</guid>
+      <description>&lt;p&gt;In this post I will explain how to create a room for &lt;em&gt;Thimbleweed Park&lt;/em&gt;, more precisely I will create the Scumm Bar of &lt;em&gt;The Secret of Monkey Island&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New year, new theme!</title>
+      <link>//localhost:1313/post/2021-01-19-new-theme/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2021-01-19-new-theme/</guid>
+      <description>&lt;p&gt;Yeah, why not starting a new year with a new theme ?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lighting</title>
+      <link>//localhost:1313/post/2020-08-18-lighting/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2020-08-18-lighting/</guid>
+      <description>&lt;p&gt;This post is about lighting in Thimbleweed Park, I don&amp;rsquo;t know you, but I found the ligthing in Thimbleweed Park marvelous. It&amp;rsquo;s subtle and nice, when an actor is walking in front the arcade, his face becomes green and then pink due to the neons color.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Savegames</title>
+      <link>//localhost:1313/post/2020-04-28-savegames/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2020-04-28-savegames/</guid>
+      <description>&lt;p&gt;Aaah savegames&amp;hellip; Without them it&amp;rsquo;s impossible to go through the whole game.&#xA;In this post I will explain the internal format and the data used in these savegames.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How engge and Thimblewed Park starts!</title>
+      <link>//localhost:1313/post/2020-01-01-boot/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2020-01-01-boot/</guid>
+      <description>&lt;h2 id=&#34;the-boot-process&#34;&gt;The boot process&lt;/h2&gt;&#xA;&lt;p&gt;First thing first, engge use Thimbleweed park ggpack files, theses files are archives and contains all the resources: images, scripts, text files, music, sounds etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Walkboxes &amp; Pathfinding</title>
+      <link>//localhost:1313/post/2020-01-01-pathfinding/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2020-01-01-pathfinding/</guid>
+      <description>&lt;h2 id=&#34;pathfinding&#34;&gt;Pathfinding&lt;/h2&gt;&#xA;&lt;p&gt;These days (huh these months), I worked a lot of time on fixing my pathfinding in engge.&#xA;First I have to explain what is pathfinding and walkboxes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to my blog!</title>
+      <link>//localhost:1313/post/2020-01-01-a-welcome/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/2020-01-01-a-welcome/</guid>
+      <description>&lt;h2 id=&#34;welcome&#34;&gt;Welcome&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this blog is to explain what I discovered when building engge and how it works.&#xA;Be kind, this is a work in progress and as you can read english is not my primary language :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="After designing the level in the first part, let&rsquo;s go to the exciting world of coding.
+" />
+<meta name="keywords" content=", tutorials, R-Type, shmup, C&#43;&#43;, lua" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="//localhost:1313/post/2021-07-06-rtype-code/" />
+
+
+    <title>
+        
+            Let&#39;s make a shoot-em-up! (Part II) :: engge blog  — A blog about my different projects
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.7289daf2e88ea2c7b253a51cc5794c7cc17e7aeb7295a19d978db764a5862f25.css" integrity="sha256-cona8uiOoseyU6UcxXlMfMF&#43;eutylaGdl423ZKWGLyU=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Let&#39;s make a shoot-em-up! (Part II)">
+  <meta itemprop="description" content="After designing the level in the first part, let’s go to the exciting world of coding.">
+  <meta itemprop="datePublished" content="2021-07-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-07-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="288">
+  <meta itemprop="keywords" content="Tutorials,R-Type,Shmup,C&#43;&#43;,Lua">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Let&#39;s make a shoot-em-up! (Part II)">
+  <meta name="twitter:description" content="After designing the level in the first part, let’s go to the exciting world of coding.">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-06 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/post" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                engge blog</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner">
+                <li><a href="/post">Blog</a></li>
+            
+    </ul>
+</nav>
+
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            
+    <div class="content">
+        <main class="post">
+
+            <div class="post-info">
+                
+                </p>
+            </div>
+
+            <article>
+                <h2 class="post-title"><a href="//localhost:1313/post/2021-07-06-rtype-code/">Let&rsquo;s make a shoot-em-up! (Part II)</a></h2>
+
+                
+                
+                
+
+                <div class="post-content">
+                    <p>After designing the level in the <a href="2021-05-21-r-type.md">first part</a>, let&rsquo;s go to the exciting world of coding.</p>
+<hr>
+<p>First I want to share my evil plan to accomplish my goal:</p>
+<ul>
+<li>use an ECS <a href="https://en.wikipedia.org/wiki/Entity_component_system">(Entity Component System)</a></li>
+<li>be able to script with LUA</li>
+<li>define all animations in JSON</li>
+<li>hot reload the game: textures/music/sounds/scripts and so on</li>
+<li>do the minimum of code in C++</li>
+</ul>
+<hr>
+<h2 id="why-use-an-ecs-">Why use an ECS ?</h2>
+<p>Well, this is something I wanted to try for a longtime, I like the principle to have a simple entity which can be extended with no limit without refactoring all my code.</p>
+<h2 id="use-lua-scripting">Use LUA scripting</h2>
+<p>I played with engge with Squirrel, but I wanted to try LUA for 2 reasons:</p>
+<ul>
+<li>LUA is used a lot in games</li>
+<li>the C++ bindings are really nice</li>
+</ul>
+<h2 id="animations-defined-in-json">Animations defined in JSON</h2>
+<p>From my point of view, it&rsquo;s not interesting when you define the game logic, to have the animations defined in code. So this is my decision to seperate it and to create JSON files. About JSON, I found it enough human readable and easy to manipulate.</p>
+<h2 id="hot-reloading">Hot reloading</h2>
+<p>Recompiling and launching the game is a long process.
+When you are designing your game, UI, enemy AI and so on you have start this process again and again, with scripting it&rsquo;s so easy to modify the code and restart the engine without restarting the executable.</p>
+<h2 id="minimum-code-in-c">Minimum code in C++</h2>
+<p>If I want to use hot reloading I need to minimize the C++ code. If I&rsquo;m able to code almost all the game logic in LUA, then it will be easier to use hit reloading.
+So the question I need to ask myself anytime I add code in C++ is: can I do it in LUA instead ?</p>
+                </div>
+            </article>
+
+            <hr />
+
+            <div class="post-info">
+                
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="//localhost:1313/tags/tutorials/">tutorials</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/r-type/">R-Type</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/shmup/">shmup</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/c&#43;&#43;/">C&#43;&#43;</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/lua/">lua</a></span>
+        
+    </p>
+
+                
+            </div>
+        </main>
+    </div>
+
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.08b680078a3cf9c69e3dd217a5aa52cfddd4a1d850f8cdff127fdd7421a71f8b2b474be69386f67819edace92273916e7230c9054f38107db9dc6730b3530ab5.js" integrity="sha512-CLaAB4o8&#43;caePdIXpapSz93UodhQ&#43;M3/En/ddCGnH4srR0vmk4b2eBntrOkic5FucjDJBU84EH253Gcws1MKtQ=="></script>
+
+
+
+
+    </body>
+</html>

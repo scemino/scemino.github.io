@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on scemino blog</title>
+    <link>//localhost:1313/tags/c/</link>
+    <description>Recent content in C on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Year 2023</title>
+      <link>//localhost:1313/posts/2024-03-09-year2023/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2024-03-09-year2023/</guid>
+      <description>&lt;p&gt;Here is a small summary of my projects of the year 2023.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1033 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on scemino blog</title>
+        <link>//localhost:1313/posts/</link>
+        <description>Recent content in Posts on scemino blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 12 Apr 2026 16:59:07 +0200</lastBuildDate>
+        <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hugo</title>
+            <link>//localhost:1313/posts/2026-04-12-hugo/</link>
+            <pubDate>Sun, 12 Apr 2026 16:59:07 +0200</pubDate>
+            
+            <guid>//localhost:1313/posts/2026-04-12-hugo/</guid>
+            <description>&lt;p&gt;I’ve been thinking about revamping my website for a while, and today I finally did it.&lt;/p&gt;
+&lt;p&gt;Previously, I used the solution recommended by GitHub for creating a static website: &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What I liked about this solution was being able to write text with certain features like: formatting text, adding links, creating lists, inserting images, and syntax-highlighted code. In short, I had no complaints about that.&lt;/p&gt;
+&lt;p&gt;What I liked least was the reliance on Ruby and its dependencies.
+I started looking into other options and thought &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; seemed like an interesting alternative.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>I’ve been thinking about revamping my website for a while, and today I finally did it.</p>
+<p>Previously, I used the solution recommended by GitHub for creating a static website: <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+<p>What I liked about this solution was being able to write text with certain features like: formatting text, adding links, creating lists, inserting images, and syntax-highlighted code. In short, I had no complaints about that.</p>
+<p>What I liked least was the reliance on Ruby and its dependencies.
+I started looking into other options and thought <a href="https://gohugo.io/">Hugo</a> seemed like an interesting alternative.</p>
+<p>It’s still too early to give my final verdict, but my first impression is quite positive, and it even offers a way to migrate your site directly to Hugo from several platforms, including Jekyll.</p>
+<p>To be continued&hellip;</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Thimbleweed Park in ScummVM</title>
+            <link>//localhost:1313/posts/2024-04-15-scummvm/</link>
+            <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2024-04-15-scummvm/</guid>
+            <description>&lt;p&gt;Now it&amp;rsquo;s official &lt;code&gt;Thimbleweed Park&lt;/code&gt; is available in ScummVM 🎉&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Now it&rsquo;s official <code>Thimbleweed Park</code> is available in ScummVM 🎉</p>
+<p>I&rsquo;m happy to announce the availability of <code>Thimbleweed Park</code> in <code>ScummVM</code>, it&rsquo;s <a href="https://www.scummvm.org/news/20240413/">official</a> now!</p>
+<p><img src="/assets/images/twp_scummvm.png" alt="game.png"></p>
+<p>I&rsquo;ve been working on integrating <code>Thimbleweed Park</code> into <code>ScummVM</code>.
+I&rsquo;d been approached a while back about integrating <code>engge</code> into <code>ScummVM</code>, but didn&rsquo;t feel ready at the time.</p>
+<p>I started working on this integration in December 2023 and regularly post my progress on youtube.</p>
+<p>It all began with a POC (proof of concept):
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/y9wZwFn6fBY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+</p>
+<p>See the full <a href="https://youtube.com/playlist?list=PLEWKzA7f3DYmyu64_4pnk6yMqhcN7Psoi&amp;feature=shared">playlist</a>.</p>
+<p>Later, the <code>ScummVM</code> team warmly invited me to join their team, which I gladly accepted.</p>
+<p>In the course of this work, I&rsquo;ve been able to improve some of the shortcomings present in <code>engge</code> and <code>engge2</code>, and the game should now be faster in certain phases of the game (notably in the library), while the shader handling the lighting has also been improved + various small enhancements.</p>
+<p>I hope this will please some of you, and don&rsquo;t hesitate to leave me a comment if you wish.</p>
+<p>More in the next episode.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Year 2023</title>
+            <link>//localhost:1313/posts/2024-03-09-year2023/</link>
+            <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2024-03-09-year2023/</guid>
+            <description>&lt;p&gt;Here is a small summary of my projects of the year 2023.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Here is a small summary of my projects of the year 2023.</p>
+<p>During this year I worked on 3 projects:</p>
+<ul>
+<li>
+<p>a Thomson MO5 Emulator</p>
+</li>
+<li>
+<p>NES emulator</p>
+</li>
+<li>
+<p>a rewrite of Another World (game by Eric Chahi)</p>
+</li>
+</ul>
+<h2 id="thomson-mo5-emulator">Thomson MO5 Emulator</h2>
+<p><img src="https://scemino.github.io/yame_wp/mo5/mo5.webp" alt="MO5"></p>
+<p>The <code>Thomson MO5</code> was my first computer. It had a Motorola 6809E processor clocked at 1 MHz, so I could play with it a bit, but it also gave me an early start in programming.
+With a touch of nostalgia and thanks to the magnificent <a href="https://github.com/floooh/chips">chips</a> project, I&rsquo;ve been able to create a MO5 emulator that can be used online <a href="https://scemino.github.io/yame_wp/">here</a>.</p>
+<p>It allows me to play the various games I grew up playing.</p>
+<h2 id="nes-emulator">NES Emulator</h2>
+<p>I&rsquo;d always wanted to create an NES emulator, but I&rsquo;d never taken the time to do it.
+That desire came back recently when I got my hands on the <a href="https://github.com/floooh/chips">chips</a>.</p>
+<p>I had a lot of fun recreating this console and, above all, adding the tools that revolve around it: a color palette viewer, sprite viewer, memory viewer and so on.</p>
+<p><img src="/assets/images/nes.png" alt="NES"></p>
+<h2 id="another-world-rewrite">Another World rewrite</h2>
+<p><img src="/assets/images/AnotherWorld.jpg" alt="AnotherWorld"></p>
+<p>In the same vein, I&rsquo;ve written a program that lets you play <code>Another World</code> directly from your browser <a href="https://scemino.github.io/raw_wp/">here</a>.
+To play it, you&rsquo;ll need to zip up the game <code>Another World</code> and drop it into your browser.</p>
+<p>First of all, a word about Another World, the cult game created by Eric Chahi in 1991, an action/adventure game that made a big impression at the time thanks to its graphics and, above all, its animations and cinematic scenes.</p>
+<p>As the game is really interesting to study, I wanted to include a debugger to help you better understand how it works.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Let&#39;s make a shoot-em-up! (Part II)</title>
+            <link>//localhost:1313/posts/2021-07-06-rtype-code/</link>
+            <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2021-07-06-rtype-code/</guid>
+            <description>&lt;p&gt;After designing the level in the &lt;a href=&#34;2021-05-21-r-type.md&#34;&gt;first part&lt;/a&gt;, let&amp;rsquo;s go to the exciting world of coding.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>After designing the level in the <a href="2021-05-21-r-type.md">first part</a>, let&rsquo;s go to the exciting world of coding.</p>
+<hr>
+<p>First I want to share my evil plan to accomplish my goal:</p>
+<ul>
+<li>use an ECS <a href="https://en.wikipedia.org/wiki/Entity_component_system">(Entity Component System)</a></li>
+<li>be able to script with LUA</li>
+<li>define all animations in JSON</li>
+<li>hot reload the game: textures/music/sounds/scripts and so on</li>
+<li>do the minimum of code in C++</li>
+</ul>
+<hr>
+<h2 id="why-use-an-ecs-">Why use an ECS ?</h2>
+<p>Well, this is something I wanted to try for a longtime, I like the principle to have a simple entity which can be extended with no limit without refactoring all my code.</p>
+<h2 id="use-lua-scripting">Use LUA scripting</h2>
+<p>I played with engge with Squirrel, but I wanted to try LUA for 2 reasons:</p>
+<ul>
+<li>LUA is used a lot in games</li>
+<li>the C++ bindings are really nice</li>
+</ul>
+<h2 id="animations-defined-in-json">Animations defined in JSON</h2>
+<p>From my point of view, it&rsquo;s not interesting when you define the game logic, to have the animations defined in code. So this is my decision to seperate it and to create JSON files. About JSON, I found it enough human readable and easy to manipulate.</p>
+<h2 id="hot-reloading">Hot reloading</h2>
+<p>Recompiling and launching the game is a long process.
+When you are designing your game, UI, enemy AI and so on you have start this process again and again, with scripting it&rsquo;s so easy to modify the code and restart the engine without restarting the executable.</p>
+<h2 id="minimum-code-in-c">Minimum code in C++</h2>
+<p>If I want to use hot reloading I need to minimize the C++ code. If I&rsquo;m able to code almost all the game logic in LUA, then it will be easier to use hit reloading.
+So the question I need to ask myself anytime I add code in C++ is: can I do it in LUA instead ?</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Let&#39;s make a shoot-em-up!</title>
+            <link>//localhost:1313/posts/2021-05-21-rtype/</link>
+            <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2021-05-21-rtype/</guid>
+            <description>&lt;p&gt;After three years of development on &lt;a href=&#34;https://github.com/scemino/engge&#34;&gt;engge&lt;/a&gt;, I needed to play with something different. When I was young I was of course a fan of point&amp;rsquo;n&amp;rsquo;click adventure games, but shoot-em-up were also really famous at this time. Let&amp;rsquo;s make a shoot-em-up!
+So let&amp;rsquo;s dive into this new adventure which is not a point&amp;rsquo;n&amp;rsquo;click ;)&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>After three years of development on <a href="https://github.com/scemino/engge">engge</a>, I needed to play with something different. When I was young I was of course a fan of point&rsquo;n&rsquo;click adventure games, but shoot-em-up were also really famous at this time. Let&rsquo;s make a shoot-em-up!
+So let&rsquo;s dive into this new adventure which is not a point&rsquo;n&rsquo;click ;)</p>
+<hr>
+<p>So why not recreate the famous <a href="https://en.wikipedia.org/wiki/R-Type">R-Type</a> by <a href="https://en.wikipedia.org/wiki/Irem">Irem</a> (Arcade-version)?</p>
+<p>Wow, wow, slowly, I will try to create the first level, and I&rsquo;ll do what I can, no promise done, you&rsquo;re warned.</p>
+<p><img src="/assets/images/rtype/game.png" alt="game.png"></p>
+<hr>
+
+
+
+  <blockquote class="alert alert-warning">
+    <p class="alert-heading">
+      ℹ️
+      
+        Warning
+      
+    </p>
+    <p><strong>DISCLAIMER</strong>
+I&rsquo;m not a game developer. Hum? OK, I do develop games <strong>but</strong> this is just a hobby. I&rsquo;m not a professional, take my advice as is.</p>
+  </blockquote>
+<h2 id="create-the-level">Create the level</h2>
+<p>My first intuition was to search on Internet if someone has already made this level for me (Yes, I know I&rsquo;m a bit lazy).
+Unfortunately, I found nothing, so why not learning how to do it myself?</p>
+<p>To create the level, we need to capture the screenshots of the game.</p>
+<h2 id="capture-the-tiles-of-the-original-game">Capture the tiles of the original game</h2>
+<p>I found on a <a href="http://eab.abime.net/showthread.php?p=1014497">forum</a> someone who created a modified version of <a href="https://www.mamedev.org">MAME</a> which allows saving the tiles and palettes: <a href="http://pagesperso-orange.fr/franck.charlet/mamed_ts.zip">mamed_ts</a>.</p>
+<p>An you&rsquo;ll get 13 stripes (128 × 2048 pixels).</p>
+<p><img src="/assets/images/rtype/mamed_ts1.png" alt="tileset1">
+<img src="/assets/images/rtype/mamed_ts2.png" alt="tileset2">
+<img src="/assets/images/rtype/mamed_ts3.png" alt="tileset3"></p>
+<p>Now I hope you like jigsaws ;)</p>
+<h2 id="create-bigger-tiles">Create bigger tiles</h2>
+<p>Then use <a href="https://www.mapeditor.org">Tiled</a>; if you don&rsquo;t know Tiled, it&rsquo;s an amazing tool to create your level based on tiles, go and try it.</p>
+<p>The first step is to create bigger tiles from the little ones.</p>
+<p><img src="/assets/images/rtype/bumbo_left.png" alt="bumbo_left.png"></p>
+<p>Then when all big tiles have been made, we can create a spritesheet with all of them.</p>
+<p><img src="/assets/images/rtype/rtype.png" alt="rtype.png"></p>
+<p>The final step is to create the whole level just with this spritesheet, and you get this:</p>
+<p><img src="/assets/images/rtype/tiled.png" alt="tiled.png"></p>
+<p>In the next episode we will start to write some code.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>How to create a room for Thimbleweed Park</title>
+            <link>//localhost:1313/posts/2021-01-24-create-room/</link>
+            <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2021-01-24-create-room/</guid>
+            <description>&lt;p&gt;In this post I will explain how to create a room for &lt;em&gt;Thimbleweed Park&lt;/em&gt;, more precisely I will create the Scumm Bar of &lt;em&gt;The Secret of Monkey Island&lt;/em&gt;.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>In this post I will explain how to create a room for <em>Thimbleweed Park</em>, more precisely I will create the Scumm Bar of <em>The Secret of Monkey Island</em>.</p>
+<h2 id="the-steps">The steps</h2>
+<p>Here is a video of the new room that we will create (without the dialogs, maybe it will be in another tutorial).</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5Ww9gvgcrfc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<p>The steps to create the new room:</p>
+<ul>
+<li>install the tools</li>
+<li>create your spritesheet</li>
+<li>create the room</li>
+<li>create the room script</li>
+<li>pack the files</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To accomplish our task, you will need theses tools:</p>
+<ul>
+<li><em>Thimbleweed Park</em> (this is obvious)</li>
+<li>Images from <em>Monkey Island 1</em></li>
+<li><a href="https://www.codeandweb.com/texturepacker"><strong>TexturePacker</strong></a> to create a spritesheet from images</li>
+<li><a href="https://github.com/scemino/EnggeFramework/tree/main/demos/WimpyViewer"><strong>WimpyViewer</strong></a>: a tool to edit room for <em>Thimbleweed Park</em></li>
+<li><a href="https://github.com/fzipp/gg"><strong>ggpack tools</strong></a>: to pack all files, rooms, images, scripts and so on for <em>Thimbleweed Park</em>, this will create a <code>ThimbleweedPark.ggpack1</code> file.</li>
+</ul>
+
+
+
+  <blockquote class="alert alert-warning">
+    <p class="alert-heading">
+      ℹ️
+      
+        Warning
+      
+    </p>
+    <p><strong>Watch out!</strong> Before starting, make a copy of your original <a href="">ThimbleweedPark.ggpack1</a> file</p>
+  </blockquote>
+<h2 id="create-your-spritesheet">Create your spritesheet</h2>
+<p>Run Texture Packer or use can use a free alternative like  <a href="http://free-tex-packer.com"><strong>Free Texture Packer</strong></a></p>
+<p>Drag and drop all your images, you should have something like this</p>
+<p><img src="/assets/images/spritesheet.png" alt="spritesheet"></p>
+<p>Be sure to validate this:</p>
+<ul>
+<li>Data format: JSON (Hash)</li>
+<li>Data file: <code>ScummBarSheet.json</code></li>
+<li>Trim sprite names</li>
+</ul>
+<p><img src="/assets/images/options_format.png" alt="options_format"></p>
+<ul>
+<li>Allow rotation: unchecked</li>
+</ul>
+<p><img src="/assets/images/options_rotation.png" alt="options_rotation"></p>
+<p>Then click on <code>Publish sprite sheet</code>, you should have now 2 files: <code>ScummBarSheet.json</code> and <code>ScummBarSheet.png</code></p>
+<p>🥳 Congratulations 🥳, the first part is done.</p>
+<h2 id="create-the-room">Create the room</h2>
+<p>Before creating the room you need to setup your environment, first we need to create a specific folder structure like this:</p>
+<p><img src="/assets/images/room_directories.png" alt="room_directories"></p>
+<ul>
+<li><strong>Wimpy</strong>: this is where you create your room file</li>
+<li><strong>SpriteSheets</strong>: this folder contains the spritesheet files</li>
+<li><strong>Scripts</strong>: this one contains the room scripts</li>
+</ul>
+<h2 id="create-the-room-template">Create the room template</h2>
+<p>Create a file and name it <code>ScummBar.wimpy</code> and paste this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;background&#34;</span>: <span style="color:#e6db74">&#34;background&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fullscreen&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;height&#34;</span>: <span style="color:#ae81ff">172</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ScummBar&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;objects&#34;</span>: [],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;roomsize&#34;</span>: <span style="color:#e6db74">&#34;{640,240}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;scaling&#34;</span>: [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;0.6@89&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;0.6@118&#34;</span>
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sheet&#34;</span>: <span style="color:#e6db74">&#34;ScummBarSheet&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;walkboxes&#34;</span>: []
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Then run <code>WimpyViewer</code> and drag and drop your wimpy file into it, you should see an empty room like this:</p>
+<p><img src="/assets/images/wimpy_empty.png" alt="wimpy_empty"></p>
+<h2 id="create-the-objects">Create the objects</h2>
+<p>Go in the menu <code>Edit</code> and select <code>New object...</code> or use the shortcut <code>N</code></p>
+<p><img src="/assets/images/wimpy_create_object.png" alt="wimpy_create_object"></p>
+<p>Rename it <code>scummBarDoor</code>, don&rsquo;t change the following properties.</p>
+<p>And here starts the fun part.</p>
+<p>Go in the menu <code>Edit</code> and select <code>Edit Animations...</code> or use the shortcut <code>A</code>, click on <code>New...</code> and type <code>state0</code>, start again and create a <code>state1</code>.</p>
+<p><img src="/assets/images/wimpy_define_states.png" alt="wimpy_define_states"></p>
+<p>In <code>Animation states</code> window, you have all the images declared in your spritesheet.
+Drag and drop from <code>Animation states</code> window <code>obj_322</code> into <code>state1</code>, like this.</p>
+<p><img src="/assets/images/wimpy_drag_image.png" alt="wimpy_drag_image"></p>
+<p>Nothing has changed, but&hellip; if you click in the background and press key <code>2</code>, now you should see the door opened, cool no?</p>
+<p><img src="/assets/images/wimpy_states.png" alt="wimpy_states"></p>
+<p>You need to change the property of the object to <code>Prop</code> in order to move the door to the correct position.</p>
+<p><img src="/assets/images/wimpy_pos_door.png" alt="wimpy_pos_door"></p>
+<p>And now once again if you click in the background, you can test the different states by pressing key <code>1</code> and key <code>2</code>, it will set the state of the door to <code>state0</code> (closed) and <code>state1</code> (door) respectively.</p>
+<p><img src="/assets/images/wimpy_anim_door.gif" alt="wimpy_anim_door"></p>
+<p>Now we will define the hotspot for this door, but first what is a hotspot?
+A hotspot is the rectangular area where the mouse cursor will detect the object, here the door.</p>
+<p><img src="/assets/images/wimpy_hotspot.png" alt="wimpy_hotspot"></p>
+<p>First, we need to unset the object as a <code>Prop</code>. Why? Because if your object is a <code>Prop</code> you won&rsquo;t be able to interact with this object in the game.
+Then we can edit the hotspot by clicking one of the handles and you need to define the <code>use position</code>, this position specify where the actor will move if you click on this object.</p>
+<p>Finally, we have to define the direction of the actor when he will reach the object&rsquo;s position, in our example we will see the back of the actor, so we need to define the <code>use direction</code> to <code>Back</code>.</p>
+<p><img src="/assets/images/wimpy_usedir.png" alt="wimpy_usedir"></p>
+<h2 id="create-the-walkboxes">Create the walkboxes</h2>
+<p>What is a walkbox?</p>
+
+
+
+  <blockquote>
+    <p>A walbox is a polygon where an actor (a character of the game) is able to walk.</p>
+
+  </blockquote>
+<p>Go to the menu <code>View</code> and select <code>Show walkbox Info...</code> and click on the <code>New walkbox</code> button in the <code>Walkbox Info</code> window. And now go to the <code>Edit</code> menu and select <code>Edit walkboxes</code> or shortcut <code>W</code>.</p>
+<p><img src="/assets/images/wimpy_new_walkbox.png" alt="wimpy_new_walkbox"></p>
+<p>Now you can edit the handle of the walkbox, but 4 points are not enough to create our walkbox, you will need to add other points, to do this click on the right mouse button where you want to insert your point in the walkbox.
+To remove a point, click on the right mouse button on a point.</p>
+<p>You should now be able to create a walkbox like this:</p>
+<p><img src="/assets/images/wimpy_walkbox.png" alt="wimpy_walkbox"></p>
+<p>Now save your room, and that&rsquo;s it for wimpy!</p>
+<h2 id="create-the-room-script">Create the room script</h2>
+<p>Create a script file named <code>ScummBar.nut</code> with its minimal content:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ScummBar <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span> background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ScummBar&#34;</span>
+</span></span><span style="display:flex;"><span> enter <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(door) 
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span> exit <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span> {
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>A <code>.nut</code> file is a squirrel script file, squirrel is a language similar to <code>lua</code>.
+In this file, we declare a table called <code>ScummBar</code> (the name of the room), we defined a property <code>background</code> set to <code>ScummBar</code> and 2 functions <code>enter</code> and <code>exit</code>, when the room becomes the current room, the <code>enter</code> function is called.</p>
+<p>Now we want to be able to interact with the door, to do this we need to declare inside the room, a table, this table should be named <code>scummBarDoor</code>, the exact same name as we declare the door in the wimpy file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>scummBarDoor <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;door&#34;</span>
+</span></span><span style="display:flex;"><span>    flags <span style="color:#f92672">=</span> DOOR_BACK
+</span></span><span style="display:flex;"><span>    defaultVerb <span style="color:#f92672">=</span> VERB_OPEN
+</span></span><span style="display:flex;"><span>    autoclose <span style="color:#f92672">=</span> YES
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The property <code>name</code> defined the text that the cursor will display when it will be over the door&rsquo;s hotspot.
+<code>flags</code> set to <code>DOOR_BACK</code> indicates the direction of the cursor when it will be over it.</p>
+<p>The property <code>defaultVerb</code> is handy to use a quickly an action, when you press the right mouse button button on the door, it will open it when <code>defaultVerb</code> is set to <code>VERB_OPEN</code>.</p>
+<p><code>autoclose</code> is specific to a door object, when an actor open the door, the door will be automatically closed after.</p>
+<p>Now we need to define what to do if we execute the <code>VERB_OPEN</code> on this door, and what to do if we execute <code>VERB_CLOSE</code>, you can also add what to do when the actor walks directly to the door, and he would be useful to exit from the current room to go to the other one (in this example, we will go to the main street).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>verbOpen <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    openDoors(this, MainStreet.mainStreetDinerDoor)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>verbClose <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    closeDoors(this, MainStreet.mainStreetDinerDoor)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>verbWalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    exitRoomFromDoor(this, MainStreet.mainStreetDinerDoor)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>If you want your player be able to talk to someone, just add a table to the &ldquo;object&rdquo; you want to talk to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>pirate4 <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>    flags <span style="color:#f92672">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>    defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>    verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        sayLine(<span style="color:#e6db74">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You have to set the property <code>flags</code> to <code>TALKABLE</code> to be able to talk to this pirate, set the <code>defaultVerb</code> to <code>VERB_TALKTO</code> and now you can decide what to do when the actor talks to this pirate.
+In this example, we want the actor to say &ldquo;I don&rsquo;t think it&rsquo;s wise to wake a sleeping pirate.&rdquo;.
+Nice 😎</p>
+<p>OK now you have enough information to add the other interactions.
+Here is my final script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ScummBar <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ScummBar&#34;</span>
+</span></span><span style="display:flex;"><span>    enter <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(door) 
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        loopObjectState(chandelier, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(chain, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(fire, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate1, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate2, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate3, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate4, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate5, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate6, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate7, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate8, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate9, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(dog, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    exit <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    chandelier <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    fire <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate4 <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate5 <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirates&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I don&#39;t want to bother them.&#34;</span>,<span style="color:#e6db74">&#34;They&#39;re busy listening to the guy on the left.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate8 <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I think they&#39;re busy.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate9 <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    dog <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dog&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(dog,<span style="color:#e6db74">&#34;Grrrr.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    scummBarDockDoor <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;door&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> DOOR_BACK
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_OPEN
+</span></span><span style="display:flex;"><span>        autoclose <span style="color:#f92672">=</span> YES
+</span></span><span style="display:flex;"><span>        verbLookAt <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;It&#39;s a door.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbPickUp <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I can&#39;t! It&#39;s been glued to the floor.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbUse <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(obj<span style="color:#f92672">=</span>null)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;No way!&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbWalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            exitRoomFromDoor(this, Dock.dockScummBarDoor)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbOpen <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            openDoors(this, Dock.dockScummBarDoor)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbClose <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            closeDoors(this, Dock.dockScummBarDoor)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbPush <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            verbOpen()
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbPull <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            noReach()
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;There&#39;s no handle on the door.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="pack-the-files">Pack the files</h2>
+<p>The first time, you&rsquo;ll need to extract all the files from <code>ThimbleweedPark.ggpack1</code> in a directory.
+In this tutorial I will use <code>ggpack tools</code>:</p>
+<p><code>ggpack -extract &quot;*&quot; ThimbleweedPark.ggpack1</code></p>
+<p>Now in this directory, don&rsquo;t forget to copy our new room files:</p>
+<ul>
+<li><code>ScummBarSheet.json</code></li>
+<li><code>ScummBarSheet.png</code></li>
+<li><code>ScummBar.wimpy</code></li>
+<li><code>ScummBar.nut</code> (rename it to <code>ScummBar.bnut</code>)</li>
+</ul>
+<p>We are almost done, we need to declare our room in the <code>DefineRooms.bnut</code>, add this statement:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>include(<span style="color:#e6db74">&#34;ScummBar.nut&#34;</span>)
+</span></span><span style="display:flex;"><span>defineRoom(ScummBar)
+</span></span></code></pre></div><p>Now we want to start the game directly in the ScummBar, edit the <code>boot.bnut</code> and locate this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (do_opening) {
+</span></span><span style="display:flex;"><span>  g.openingScene <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  startglobalthread(newOpeningScene)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Modify it to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (do_opening) {
+</span></span><span style="display:flex;"><span>  g.openingScene <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">//</span>startglobalthread(newOpeningScene)
+</span></span><span style="display:flex;"><span>  startglobalthread(enterScummBar)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And add this code before</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span> script enterScummBar() {
+</span></span><span style="display:flex;"><span>  actorSlotSelectable(ray, ON)
+</span></span><span style="display:flex;"><span>  actorSlotSelectable(reyes, ON)
+</span></span><span style="display:flex;"><span>  actorSlotSelectable(ON)
+</span></span><span style="display:flex;"><span>  cameraInRoom(ScummBar)
+</span></span><span style="display:flex;"><span>  actorAt(ray, ScummBar.scummBarDoor)
+</span></span><span style="display:flex;"><span>  selectActor(ray)
+</span></span><span style="display:flex;"><span>  cameraFollow(ray)
+</span></span><span style="display:flex;"><span>  inputVerbs(ON)
+</span></span><span style="display:flex;"><span>  inputOn()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>it&rsquo;s time to pack all files</p>
+<p><code>ggpack -create &quot;*&quot; ThimbleweedPark.ggpack1</code></p>
+
+
+
+  <blockquote class="alert alert-warning">
+    <p class="alert-heading">
+      ℹ️
+      
+        Warning
+      
+    </p>
+    <p><strong>Watch out!</strong> Before executing the next step, make a copy of your original <a href="">ThimbleweedPark.ggpack1</a> file</p>
+  </blockquote>
+<p>Move or copy this file to your game directory.</p>
+<p>Et voilà, I hope you enjoyed it as mush as I did, don&rsquo;t hesitate to share your remarks in the comments and please let me know if you create your own room, it would be amazing.
+Don&rsquo;t be shy if you have any questions, I will try to answer them, or if you want more tutorials let me know.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>New year, new theme!</title>
+            <link>//localhost:1313/posts/2021-01-19-new-theme/</link>
+            <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2021-01-19-new-theme/</guid>
+            <description>&lt;p&gt;Yeah, why not starting a new year with a new theme ?&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Yeah, why not starting a new year with a new theme ?</p>
+<h2 id="a-new-theme">A new theme</h2>
+<p>OK, this year I decided to change my blog and I start with a new theme: <a href="https://mmistakes.github.io/minimal-mistakes">minimal-mistakes</a>, fantastic no ?</p>
+<p>You didn&rsquo;t believe I was able to create a blog like this on my own and you&rsquo;re right!!
+Why do I ask, I&rsquo;m alone on this blog 😃</p>
+<h2 id="what-next-this-year-">What next this year ?</h2>
+<p>Hmmm, I didn&rsquo;t write too much posts last year, so why not change this ?
+So what&rsquo;s the plan this year about engge:</p>
+<ul>
+<li>lighting shader!! As explained in the <a href="../lighting">previous post</a>, I worked on lighting shader, and it will be available for the next release 0.7.0.</li>
+<li>a new graphic framework, I will replace SFML by my own framework based on SDL2, <a href="https://github.com/scemino/EnggeFramework">check the repo</a>.</li>
+<li>with a framework based on SDL2, it will be simpler to add input controllers support</li>
+<li>and bug fixes, hooray</li>
+</ul>]]></content>
+        </item>
+        
+        <item>
+            <title>Lighting</title>
+            <link>//localhost:1313/posts/2020-08-18-lighting/</link>
+            <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2020-08-18-lighting/</guid>
+            <description>&lt;p&gt;This post is about lighting in Thimbleweed Park, I don&amp;rsquo;t know you, but I found the ligthing in Thimbleweed Park marvelous. It&amp;rsquo;s subtle and nice, when an actor is walking in front the arcade, his face becomes green and then pink due to the neons color.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>This post is about lighting in Thimbleweed Park, I don&rsquo;t know you, but I found the ligthing in Thimbleweed Park marvelous. It&rsquo;s subtle and nice, when an actor is walking in front the arcade, his face becomes green and then pink due to the neons color.</p>
+<p><img src="/assets/images/arcade.png" alt="arcade.png"></p>
+<p>Before going deeper in all the explanations, I will describe how lights are defined in Thimbleweed Park.
+Actually, all the lights are defined in the script files, directly in the room script.
+More precisely they are defined in the <code>enter</code> function like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>enter <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(enter_door)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setAmbientLight</span>(<span style="color:#ae81ff">0x77909d</span>)	
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    _lightObject1 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">160</span>, <span style="color:#ae81ff">278</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">97</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">527</span>, <span style="color:#ae81ff">278</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">97</span>)
+</span></span><span style="display:flex;"><span>    _lightObject3 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">869</span>, <span style="color:#ae81ff">278</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">97</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    _lightObject4 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">628</span>, <span style="color:#ae81ff">185</span>, <span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.65</span>, <span style="color:#ae81ff">93</span>, <span style="color:#ae81ff">100</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject5 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">2133</span>, <span style="color:#ae81ff">178</span>, <span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">118</span>)	
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    _lightObject6 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xf78a00</span>, <span style="color:#a6e22e">objectPosX</span>(aStreetTrashCan), <span style="color:#ae81ff">114</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">270</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">76</span>, <span style="color:#ae81ff">96</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject7 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xffed93</span>, <span style="color:#a6e22e">objectPosX</span>(aStreetSaleSign), <span style="color:#ae81ff">114</span>, <span style="color:#ae81ff">0.6</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">270</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">68</span>, <span style="color:#ae81ff">97</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>As you can see you can specify an ambient light color with <code>setAmbientLight</code> function.
+This one is easy ;)
+The following lines setup all the directional lights with an helper function <code>lightSetUp</code> defined in <code>Helpers.nut</code>.</p>
+<p>Here the details of this function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>function <span style="color:#a6e22e">lightSetUp</span>(color, x, y, brightness, direction, angle, falloff, cutoffRadius, halfRadius, nearY <span style="color:#f92672">=</span> null, farY <span style="color:#f92672">=</span> null) {
+</span></span><span style="display:flex;"><span> local light <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span> light <span style="color:#f92672">=</span> <span style="color:#a6e22e">createLight</span>(color, x, y)		
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightBrightness</span>(light,brightness);		
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightConeDirection</span>(light,direction);	
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightConeAngle</span>(light,angle);			
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightConeFalloff</span>(light,falloff);		
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightCutOffRadius</span>(light,cutoffRadius);	
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightHalfRadius</span>(light,halfRadius);		
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">if</span> (nearY <span style="color:#f92672">!=</span> null <span style="color:#f92672">&amp;&amp;</span> farY <span style="color:#f92672">!=</span> null) {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightZRange</span>(light, nearY, farY)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> light
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I tried to find some information on internet how to create this lighting effect, I found of course this well-known blog: <a href="https://blog.thimbleweedpark.com/quickiepal.html">QuickiePal</a> but there is no much explanation.</p>
+<p>After several hours of searching, here is what I found interesting:</p>
+<ul>
+<li><a href="https://www.codeandweb.com/blog/2015/05/12/lighting-demo-cocos2d-x">cocos2d-x dynamic light tutorial</a></li>
+<li><a href="https://www.tomdalling.com/blog/modern-opengl/08-even-more-lighting-directional-lights-spotlights-multiple-lights/">www.tomdalling.com</a></li>
+<li><a href="https://learnopengl.com/Lighting/Light-casters">learnopengl.com</a></li>
+<li><a href="http://ogldev.org/www/tutorial21/tutorial21.html">ogldev.org</a></li>
+</ul>
+<p>So I started with the project &ldquo;cocos2d-x dynamic light tutorial&rdquo;.
+The result is nice, it gives a 3D effect with an additional normal map to give for every sprite.</p>
+<p><img src="https://www.codeandweb.com/o/blog/2015/05/12/lighting-demo-cocos2d-x/cocos2d-x-sprite-sheet-animation-with-movable-light-2-960.jpg" alt="cocos2d-x-sprite-sheet-animation-with-movable-light-2-960.jpg"></p>
+<p>With this well-explained tutorial, I have all these properties resolved:</p>
+<ul>
+<li>color of the light source and position of the light in the scene needed by <code>createLight(color, x, y)</code></li>
+<li>the brightness of the light (<code>lightBrightness</code>)</li>
+<li>the radius at which the light source does not have any effect on the sprite (<code>lightCutOffRadius</code>)</li>
+<li>the radius at which the light&rsquo;s intensity decreases to 50%. The value range is [0 … 1], relative to the cut-off radius. A value of 0.5 will give you a soft light, a value of 1 a light with hard edges. (<code>lightHalfRadius</code>)</li>
+</ul>
+<p>Then I tweaked the shader and C++ code to remove the 3D effect (normal map) and I added the other missing properties:</p>
+<ul>
+<li>cone direction</li>
+<li>cone angle</li>
+<li>cone falloff</li>
+</ul>
+<p>Here is the final result, not so bad, isn&rsquo;t it ?
+<img src="/assets/images/lighting3.gif" alt="lighting3.gif"></p>
+<p>In the <code>LightEffect::init</code>, I added the missing properties and initialized the properties like this:</p>
+<ul>
+<li>cone angle: 40°</li>
+<li>falloff: 0.2</li>
+<li>code direction: 60°</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> LightEffect<span style="color:#f92672">::</span>init()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (initGLProgramState(<span style="color:#e6db74">&#34;pointlight.frag&#34;</span>))
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        setLightColor(cocos2d<span style="color:#f92672">::</span>Color3B<span style="color:#f92672">::</span>ORANGE);
+</span></span><span style="display:flex;"><span>        setAmbientLightColor(cocos2d<span style="color:#f92672">::</span>Color3B(<span style="color:#ae81ff">127</span>,<span style="color:#ae81ff">127</span>,<span style="color:#ae81ff">127</span>));
+</span></span><span style="display:flex;"><span>        setLightCutoffRadius(<span style="color:#ae81ff">500.0f</span>);
+</span></span><span style="display:flex;"><span>        setLightHalfRadius(<span style="color:#ae81ff">0.5f</span>);
+</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#f92672">-&gt;</span>setUniformFloat(<span style="color:#e6db74">&#34;u_coneCosineHalfConeAngle&#34;</span>, cosf((M_PI<span style="color:#f92672">/</span><span style="color:#ae81ff">180.f</span>) <span style="color:#f92672">*</span>(<span style="color:#ae81ff">40.f</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.f</span>)));
+</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#f92672">-&gt;</span>setUniformFloat(<span style="color:#e6db74">&#34;u_coneFalloff&#34;</span>, <span style="color:#ae81ff">0.2f</span>);
+</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#f92672">-&gt;</span>setUniformVec2(<span style="color:#e6db74">&#34;u_coneDirection&#34;</span>, Vec2(cosf((M_PI<span style="color:#f92672">/</span><span style="color:#ae81ff">180.f</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>),sinf((M_PI<span style="color:#f92672">/</span><span style="color:#ae81ff">180.f</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>)));
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> true;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And the shader code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">#ifdef GL_ES</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">precision</span> <span style="color:#66d9ef">highp</span> <span style="color:#66d9ef">float</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">varying</span> <span style="color:#66d9ef">vec2</span> v_texCoord;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span>  u_contentSize;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec3</span>  u_ambientColor;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span> u_spritePosInSheet;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span> u_spriteSizeRelToSheet;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span> u_spriteOffset;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec3</span>  u_lightPos;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec3</span>  u_lightColor;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_brightness;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_cutoffRadius;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_halfRadius;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_coneCosineHalfConeAngle;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_coneFalloff;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span>  u_coneDirection;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main(<span style="color:#66d9ef">void</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> texColor<span style="color:#f92672">=</span>texture2D(CC_Texture0, v_texCoord);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> spriteTexCoord <span style="color:#f92672">=</span> (v_texCoord <span style="color:#f92672">-</span> u_spritePosInSheet) <span style="color:#f92672">/</span> u_spriteSizeRelToSheet; <span style="color:#75715e">// [0..1]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> pixelPos <span style="color:#f92672">=</span> spriteTexCoord <span style="color:#f92672">*</span> u_contentSize <span style="color:#f92672">+</span> u_spriteOffset; <span style="color:#75715e">// [0..origSize]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> curPixelPosInLocalSpace <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec2</span>(pixelPos.x, u_contentSize.y <span style="color:#f92672">-</span>pixelPos.y);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> diffuse <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> lightVec <span style="color:#f92672">=</span> curPixelPosInLocalSpace.xy <span style="color:#f92672">-</span> u_lightPos.xy;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> coneValue <span style="color:#f92672">=</span> dot( normalize(<span style="color:#f92672">-</span>lightVec), u_coneDirection );
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ( coneValue <span style="color:#f92672">&gt;=</span> u_coneCosineHalfConeAngle )
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> intercept <span style="color:#f92672">=</span> u_cutoffRadius <span style="color:#f92672">*</span> u_halfRadius;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> dx_1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">/</span> intercept;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> dx_2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">/</span> (u_cutoffRadius <span style="color:#f92672">-</span> intercept);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> offset <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">+</span> intercept <span style="color:#f92672">*</span> dx_2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> lightDist <span style="color:#f92672">=</span> length(lightVec);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffTermNear <span style="color:#f92672">=</span> clamp((<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> lightDist <span style="color:#f92672">*</span> dx_1), <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffTermFar  <span style="color:#f92672">=</span> clamp((offset <span style="color:#f92672">-</span> lightDist <span style="color:#f92672">*</span> dx_2), <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffSelect <span style="color:#f92672">=</span> step(intercept, lightDist);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffTerm <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> falloffSelect) <span style="color:#f92672">*</span> falloffTermNear <span style="color:#f92672">+</span> falloffSelect <span style="color:#f92672">*</span> falloffTermFar;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> spotLight <span style="color:#f92672">=</span> u_brightness <span style="color:#f92672">*</span> falloffTerm;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">vec3</span> ltdiffuse <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(u_brightness <span style="color:#f92672">*</span> falloffTerm) <span style="color:#f92672">*</span> u_lightColor;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> coneRange <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span><span style="color:#f92672">-</span>u_coneCosineHalfConeAngle;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> halfConeRange <span style="color:#f92672">=</span> coneRange <span style="color:#f92672">*</span> u_coneFalloff;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> conePos   <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span><span style="color:#f92672">-</span>coneValue;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> coneFalloff <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ( conePos <span style="color:#f92672">&gt;</span> halfConeRange )
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            coneFalloff <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span><span style="color:#f92672">-</span>((conePos<span style="color:#f92672">-</span>halfConeRange)<span style="color:#f92672">/</span>(coneRange<span style="color:#f92672">-</span>halfConeRange));
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        diffuse <span style="color:#f92672">+=</span> ltdiffuse<span style="color:#f92672">*</span>coneFalloff;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> finalCol <span style="color:#f92672">=</span> texColor;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(finalCol.a <span style="color:#f92672">==</span> <span style="color:#ae81ff">0.0</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        diffuse <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>        finalCol.rgb <span style="color:#f92672">=</span> texColor.rgb;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        finalCol.rgb <span style="color:#f92672">=</span> finalCol.rgb <span style="color:#f92672">*</span> u_ambientColor;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    gl_FragColor <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(finalCol.rgb <span style="color:#f92672">+</span> diffuse, finalCol.a);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The next step will be to integrate this effect into engge.</p>
+<h1 id="bonus">Bonus</h1>
+<p>In this animation, you can see a fire is crackling, and you can see the effect of this crackling on the face of the actors. Wow I can almost feel the warm of the fire.</p>
+<p><img src="/assets/images/lighting.gif" alt="lighting.gif"></p>
+<p>How is it done ?</p>
+<p>Well this effect is done with only these few lines:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span> script <span style="color:#a6e22e">williesFireLighting</span>() {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">lightBrightness</span>(_lightObject6, <span style="color:#a6e22e">random</span>(<span style="color:#ae81ff">0.4</span>,<span style="color:#ae81ff">3.0</span>))
+</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">breakhere</span>(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p>Magic isn&rsquo;t it ?</p>
+<p>This is a loop where every 2 frames, the brightness of the fire light is changed with a random value between 0.4 and 3.0, simple but clever.</p>]]></content>
+        </item>
+        
+        <item>
+            <title>Savegames</title>
+            <link>//localhost:1313/posts/2020-04-28-savegames/</link>
+            <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2020-04-28-savegames/</guid>
+            <description>&lt;p&gt;Aaah savegames&amp;hellip; Without them it&amp;rsquo;s impossible to go through the whole game.
+In this post I will explain the internal format and the data used in these savegames.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Aaah savegames&hellip; Without them it&rsquo;s impossible to go through the whole game.
+In this post I will explain the internal format and the data used in these savegames.</p>
+<p><img src="/assets/images/savegames.png" alt="savegames.png"></p>
+<h2 id="the-format">The format</h2>
+<p>This format can be represented by a json struture, here is an example, a lot of data have been removed to make it clear:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;actors&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;bankmanager&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_costume&#34;</span>: <span style="color:#e6db74">&#34;BankMgrAnimation&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_dir&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_lockFacing&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_pos&#34;</span>: <span style="color:#e6db74">&#34;{541,61}&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_roomKey&#34;</span>: <span style="color:#e6db74">&#34;Bank&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;defaultVerb&#34;</span>: <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;detective&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;dialog&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;callbacks&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;callbacks&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;function&#34;</span>: <span style="color:#e6db74">&#34;analyticsCallback&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;guid&#34;</span>: <span style="color:#ae81ff">8000217</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;time&#34;</span>: <span style="color:#ae81ff">29920</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;nextGuid&#34;</span>: <span style="color:#ae81ff">8000218</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;currentRoom&#34;</span>: <span style="color:#e6db74">&#34;TrailerAlley&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dialog&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;#ChetAgentStreetDialog14reyes&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;easy_mode&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gameGUID&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gameScene&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;actorsSelectable&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;actorsTempUnselectable&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;forceTalkieText&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;selectableActors&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;_actorKey&#34;</span>: <span style="color:#e6db74">&#34;ray&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;selectable&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gameTime&#34;</span>: <span style="color:#ae81ff">29738</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;globals&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;abducted_agent&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_actorKey&#34;</span>: <span style="color:#e6db74">&#34;ray&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;abducted_agent_seen&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;act1&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inputState&#34;</span>: <span style="color:#ae81ff">101</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inventory&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;slots&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;jiggle&#34;</span>: [
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;objects&#34;</span>: [
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;raysBadge&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;raysNotebook&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;countyMap1&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;cellPhone&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;fingerprintKit&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;speckOfDustRay&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;rayHotelKeycard&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;pillowTronTool&#34;</span>
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;scroll&#34;</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;objects&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;aStreetArcadeDoorWF&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;flags&#34;</span>: <span style="color:#ae81ff">1073742912</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;@29000&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;rooms&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;AStreet&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;background&#34;</span>: <span style="color:#e6db74">&#34;AStreet&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;speck_of_dust&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;speck_of_dust_collected&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;savebuild&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;savetime&#34;</span>: <span style="color:#ae81ff">1587988116</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;selectedActor&#34;</span>: <span style="color:#e6db74">&#34;ransome&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="actors">Actors</h3>
+<p>For each actor the properties are saved, there are 2 types of properties:</p>
+<ul>
+<li>internal properties: costume, direction, position, they starts with an underscore</li>
+<li>script properties: defaultVerb, detective, dialog</li>
+</ul>
+<h3 id="callbacks">Callbacks</h3>
+<p>Callbacks are functions that can be called at a certain time of the game.
+These callbacks are added from a script file, for example:</p>
+<pre tabindex="0"><code class="language-squirrel" data-lang="squirrel">addCallback(60*5, analyticsCallback)
+</code></pre><p>With this example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;callbacks&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;callbacks&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;function&#34;</span>: <span style="color:#e6db74">&#34;closeElevatorDelay&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;guid&#34;</span>: <span style="color:#ae81ff">8000036</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;param&#34;</span>: <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;time&#34;</span>: <span style="color:#ae81ff">15186</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nextGuid&#34;</span>: <span style="color:#ae81ff">8000218</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span></code></pre></div><ul>
+<li><code>function</code>: name of the function to call when time is elapsed</li>
+<li><code>param</code>: optional parameter given to the function when it is called</li>
+<li><code>guid</code>: unique identifier of the callback</li>
+<li><code>time</code>: time in ms to wait before calling the callback</li>
+<li><code>nextGuid</code>: specify the identifier to use for the next callback</li>
+</ul>
+<h3 id="dialogs">Dialogs</h3>
+<p>As you know, we have to save the state of the dialogs in order to know what choices have been displayed or chosen.</p>
+<p>This state is described like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;dialog&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;#ChetAgentStreetDialog14reyes&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span></code></pre></div><p>Each line corresponds to a condition of a dialog, the format can be described like this:
+<code>&quot;[mode][dialog_name][line_number][actor]&quot;: [value]</code></p>
+<ul>
+<li>
+<p>mode: mode is one of the following value:
+?: once
+#: showonce
+&amp;: onceever
+$: showonceever
+^: temponce</p>
+</li>
+<li>
+<p>dialog_name: name of the dialog file without extension</p>
+</li>
+<li>
+<p>line_number: line number where the condition has been met in the dialog file</p>
+</li>
+<li>
+<p>actor: actor&rsquo;s key indicating which actor is used in this dialog</p>
+</li>
+<li>
+<p>value: don&rsquo;t know yet :(</p>
+</li>
+</ul>]]></content>
+        </item>
+        
+        <item>
+            <title>How engge and Thimblewed Park starts!</title>
+            <link>//localhost:1313/posts/2020-01-01-boot/</link>
+            <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2020-01-01-boot/</guid>
+            <description>&lt;h2 id=&#34;the-boot-process&#34;&gt;The boot process&lt;/h2&gt;
+&lt;p&gt;First thing first, engge use Thimbleweed park ggpack files, theses files are archives and contains all the resources: images, scripts, text files, music, sounds etc.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="the-boot-process">The boot process</h2>
+<p>First thing first, engge use Thimbleweed park ggpack files, theses files are archives and contains all the resources: images, scripts, text files, music, sounds etc.</p>
+<p>The first thing to understand is Thimbleweed Park use <a href="http://squirrel-lang.org/">squirrel</a> scripts. Actually it uses a modified version of squirrel, why ? Because this language lacks some useful functionnalities like:</p>
+<ul>
+<li>script keyword</li>
+<li>multilines lambda</li>
+<li>rawsafeget method</li>
+<li>optional while condition</li>
+<li>else after statement</li>
+<li>implicit boolean to integer conversion</li>
+</ul>
+<p>OK let&rsquo;s go back to how Thimblewed Park starts:</p>
+<ul>
+<li>it executes the script file called <em>Defines.nut</em>, in this file there a several constants and macros defined</li>
+<li>then it executes the <em>Boot.nut</em> script, this script does a lot of things, the most important part is the inclusion of all other script files like <em>DefineSounds.nut</em>, <em>DefineRooms.nut</em> and <em>DefineActors.nut</em></li>
+</ul>
+<p>When these scripts are executed, all the game is ready to start. The main function to start the game is called <strong>start</strong>:
+<code>function start(do_opening)</code>
+As you imagine if you call start with true as argument, then you will have the opening sentence played.</p>
+<p>For engge, it&rsquo;s a little bit different, the program checks first if the <em>test.nut</em> is present next to the executable and executes it, if not, it does the same thing as Thimbleweed Park, it will execute <em>Defines.nut</em> and <em>Boot.nut</em> scripts. This solution allows me to test my engines and start the game where I want.</p>
+<h2 id="testnut-example">test.nut example</h2>
+<p>Here is an example a script which allow to skip the opening and start the game with Ray in the main street:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#a6e22e">include</span>(<span style="color:#e6db74">&#34;Defines.nut&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">include</span>(<span style="color:#e6db74">&#34;Boot.nut&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inputOn</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inputVerbs</span>(ON)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">selectActor</span>(ray)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enterRoomFromDoor</span>(highwayMainStreetDoor)
+</span></span></code></pre></div>]]></content>
+        </item>
+        
+        <item>
+            <title>Walkboxes &amp; Pathfinding</title>
+            <link>//localhost:1313/posts/2020-01-01-pathfinding/</link>
+            <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2020-01-01-pathfinding/</guid>
+            <description>&lt;h2 id=&#34;pathfinding&#34;&gt;Pathfinding&lt;/h2&gt;
+&lt;p&gt;These days (huh these months), I worked a lot of time on fixing my pathfinding in engge.
+First I have to explain what is pathfinding and walkboxes.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="pathfinding">Pathfinding</h2>
+<p>These days (huh these months), I worked a lot of time on fixing my pathfinding in engge.
+First I have to explain what is pathfinding and walkboxes.</p>
+<h2 id="walkboxes">Walkboxes</h2>
+<p>What is a walkbox ? A walbox is a polygon where an actor (a character of the game) is able to walk.
+For example, in this video, you can see that Delores follows the path to the vista and she is restricted to this path, it&rsquo;s not possible to walk on the grass.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/z23CeNXuSf0?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="how-a-walkbox-is-defined">How a walkbox is defined</h2>
+<p>In Thimbleweed Park walkboxes are defined in a file with the <strong>wimpy</strong> extension, for example in the previous video, the walkboxes are defined in a file named <em>QuickiePalOutside.wimpy</em>, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;walkboxes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;polygon&#34;</span>: <span style="color:#e6db74">&#34;{91,113};{173,113};{186,104};{329,104};{331,109};{412,109};{416,102};{494,102};{506,97};{532,94};{554,90};{660,66};{7,70};{8,86};{25,90};{19,104}&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;polygon&#34;</span>: <span style="color:#e6db74">&#34;{730,114};{732,109};{554,90};{532,94}&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// etc.
+</span></span></span><span style="display:flex;"><span>  ]
+</span></span></code></pre></div><p>This part is easy to understand, each walkbox is composed by a polygon, and each polygon is a set of points (x,y).</p>
+<p>With engge, you can display these walkboxes with the debug tools:</p>
+<p><img src="/assets/images/walkboxes1.png" alt="walkboxes1.png"></p>
+<p>OK now we have several polygons, what&rsquo;s next ?
+Pathfinding of course.</p>
+<h2 id="pathfinding-1">Pathfinding</h2>
+
+
+
+  <blockquote>
+    <p><strong>Pathfinding</strong> or <strong>pathing</strong> is the plotting, by a computer application, of the shortest route between two points. It is a more practical variant on solving mazes. This field of research is based heavily on Dijkstra&rsquo;s algorithm for finding the shortest path on a weighted graph.
+(source: <a href="https://en.wikipedia.org/wiki/Pathfinding">wikipedia</a>)</p>
+
+  </blockquote>
+<p>Here comes the tricky part, to acheive this I read a lot blogs and documentations, and here is a list of useful resources:</p>
+<ul>
+<li><a href="https://blog.thimbleweedpark.com/walkbox_video">Thimbleweed Park blog</a></li>
+<li><a href="http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/">http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/</a></li>
+<li><a href="https://www.david-gouveia.com/pathfinding-on-a-2d-polygonal-map">https://www.david-gouveia.com/pathfinding-on-a-2d-polygonal-map</a></li>
+</ul>
+<p>With this great help, the actor is able to move inside a concave polygon, that&rsquo;s great&hellip; <strong>but</strong> we don&rsquo;t have a big polygon, we have several adjacent polygons.</p>
+<p>After a long time, I found a magic library called <a href="https://sourceforge.net/projects/polyclipping/">Clipper</a>, this library can do a lot of things, but what I was looking for was a solution to merge several adjacent polygons.</p>
+<p>And here is the result:
+<img src="/assets/images/walkboxes2.png" alt="walkboxes2.png"></p>
+<p>Not bad isn&rsquo;t it ?</p>
+<p>You can even see the pathfinding in action, I converted the code (described in <a href="http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/">http://www.groebelsloot.com/2016/03/13/pathfinding-part-2/</a>) from Haxe to C++ and I use the link <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A star</a> algorithm.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZoqC6v12HqY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>]]></content>
+        </item>
+        
+        <item>
+            <title>Welcome to my blog!</title>
+            <link>//localhost:1313/posts/2020-01-01-a-welcome/</link>
+            <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+            
+            <guid>//localhost:1313/posts/2020-01-01-a-welcome/</guid>
+            <description>&lt;h2 id=&#34;welcome&#34;&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;The goal of this blog is to explain what I discovered when building engge and how it works.
+Be kind, this is a work in progress and as you can read english is not my primary language :)&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="welcome">Welcome</h2>
+<p>The goal of this blog is to explain what I discovered when building engge and how it works.
+Be kind, this is a work in progress and as you can read english is not my primary language :)</p>
+<h2 id="what-is-engge">What is engge</h2>
+<p>Oops I forgot to explain what is engge.
+engge is an adventure game engine and supports playing Thimbleweed Park.</p>
+<p>The engine is written in C++ and is cross platform. You must have a legally purchased copy of Thimbleweed Park installed on your computer in order to run that game on this engine.</p>]]></content>
+        </item>
+        
+    </channel>
+</rss>

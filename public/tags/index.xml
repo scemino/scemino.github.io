@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on scemino blog</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Apr 2026 16:59:07 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Website</title>
+      <link>//localhost:1313/tags/website/</link>
+      <pubDate>Sun, 12 Apr 2026 16:59:07 +0200</pubDate>
+      <guid>//localhost:1313/tags/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scummvm</title>
+      <link>//localhost:1313/tags/scummvm/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/scummvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Twp</title>
+      <link>//localhost:1313/tags/twp/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/twp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>//localhost:1313/tags/c/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emulator</title>
+      <link>//localhost:1313/tags/emulator/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/emulator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>//localhost:1313/tags/c&#43;&#43;/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lua</title>
+      <link>//localhost:1313/tags/lua/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/lua/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R-Type</title>
+      <link>//localhost:1313/tags/r-type/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/r-type/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shmup</title>
+      <link>//localhost:1313/tags/shmup/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/shmup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>//localhost:1313/tags/tutorials/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Level-Design</title>
+      <link>//localhost:1313/tags/level-design/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/level-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tiled</title>
+      <link>//localhost:1313/tags/tiled/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/tiled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Squirrel</title>
+      <link>//localhost:1313/tags/squirrel/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/squirrel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wimpy</title>
+      <link>//localhost:1313/tags/wimpy/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/wimpy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shader</title>
+      <link>//localhost:1313/tags/shader/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/shader/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

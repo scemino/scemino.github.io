@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wimpy on scemino blog</title>
+    <link>//localhost:1313/tags/wimpy/</link>
+    <description>Recent content in Wimpy on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/wimpy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create a room for Thimbleweed Park</title>
+      <link>//localhost:1313/posts/2021-01-24-create-room/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2021-01-24-create-room/</guid>
+      <description>&lt;p&gt;In this post I will explain how to create a room for &lt;em&gt;Thimbleweed Park&lt;/em&gt;, more precisely I will create the Scumm Bar of &lt;em&gt;The Secret of Monkey Island&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
