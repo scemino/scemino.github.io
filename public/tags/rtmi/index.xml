@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rtmi on scemino blog</title>
+    <link>//localhost:1313/tags/rtmi/</link>
+    <description>Recent content in Rtmi on scemino blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 12 Apr 2026 17:37:16 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/rtmi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Return to Monkey Island</title>
+      <link>//localhost:1313/posts/rtmi/</link>
+      <pubDate>Sun, 12 Apr 2026 17:37:16 +0200</pubDate>
+      <guid>//localhost:1313/posts/rtmi/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;As a fan of the Monkey Island 1 and 2 adventure games since my early childhood, these games are among those I will never forget.&#xA;I was particularly happy to learn that Ron Gilbert was about to release &amp;ldquo;Return to Monkey Island&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/assets/images/rtmi.jpg&#34; alt=&#34;walkboxes1.png&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2022-the-first-experiments&#34;&gt;2022 The First Experiments&lt;/h2&gt;&#xA;&lt;p&gt;And naturally, after working on &lt;code&gt;Thimbleweed Park&lt;/code&gt; for several years, I was naturally curious to find out how the game worked.&lt;/p&gt;&#xA;&lt;p&gt;I quickly discovered tools that let me list the contents of Weird.ggpack* resource files&#xA;Listing these files reveals a lot about the game engine, especially since some of them were already familiar to me—files with the extensions .ggpack, .tsv, .txt, .json, .wimpy, .lip, .png, and .yack were already used in `Thimbleweed&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

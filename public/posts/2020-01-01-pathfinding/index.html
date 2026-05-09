@@ -110,6 +110,11 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
         </span>
     </span>
 </header>
@@ -156,14 +161,14 @@ For example, in this video, you can see that Delores follows the path to the vis
 
 <h2 id="how-a-walkbox-is-defined">How a walkbox is defined</h2>
 <p>In Thimbleweed Park walkboxes are defined in a file with the <strong>wimpy</strong> extension, for example in the previous video, the walkboxes are defined in a file named <em>QuickiePalOutside.wimpy</em>, like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;walkboxes&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#5af78e">&#34;walkboxes&#34;</span><span style="color:#ff5c57">:</span> [
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;polygon&#34;</span>: <span style="color:#e6db74">&#34;{91,113};{173,113};{186,104};{329,104};{331,109};{412,109};{416,102};{494,102};{506,97};{532,94};{554,90};{660,66};{7,70};{8,86};{25,90};{19,104}&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;polygon&#34;</span>: <span style="color:#5af78e">&#34;{91,113};{173,113};{186,104};{329,104};{331,109};{412,109};{416,102};{494,102};{506,97};{532,94};{554,90};{660,66};{7,70};{8,86};{25,90};{19,104}&#34;</span>
 </span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;polygon&#34;</span>: <span style="color:#e6db74">&#34;{730,114};{732,109};{554,90};{532,94}&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;polygon&#34;</span>: <span style="color:#5af78e">&#34;{730,114};{732,109};{554,90};{532,94}&#34;</span>
 </span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// etc.
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e">// etc.
 </span></span></span><span style="display:flex;"><span>  ]
 </span></span></code></pre></div><p>This part is easy to understand, each walkbox is composed by a polygon, and each polygon is a set of points (x,y).</p>
 <p>With engge, you can display these walkboxes with the debug tools:</p>
@@ -389,8 +394,7 @@ Pathfinding of course.</p>
         
 
 
-
-<script type="text/javascript" src="/bundle.min.08b680078a3cf9c69e3dd217a5aa52cfddd4a1d850f8cdff127fdd7421a71f8b2b474be69386f67819edace92273916e7230c9054f38107db9dc6730b3530ab5.js" integrity="sha512-CLaAB4o8&#43;caePdIXpapSz93UodhQ&#43;M3/En/ddCGnH4srR0vmk4b2eBntrOkic5FucjDJBU84EH253Gcws1MKtQ=="></script>
+<script type="text/javascript" src="/bundle.min.4037dc94fd1565c4fd3354e2b4a2d1ff11842c906242435350b4d2d8d6e8b7890da46c0a865173f543a6161c1f4d1c94147f1b907db36489fc2bf5e20d4af75c.js" integrity="sha512-QDfclP0VZcT9M1TitKLR/xGELJBiQkNTULTS2Nbot4kNpGwKhlFz9UOmFhwfTRyUFH8bkH2zZIn8K/XiDUr3XA=="></script>
 
 
 

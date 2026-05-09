@@ -110,6 +110,11 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
         </span>
     </span>
 </header>
@@ -149,38 +154,38 @@
 <p>Before going deeper in all the explanations, I will describe how lights are defined in Thimbleweed Park.
 Actually, all the lights are defined in the script files, directly in the room script.
 More precisely they are defined in the <code>enter</code> function like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>enter <span style="color:#f92672">=</span> <span style="color:#a6e22e">function</span>(enter_door)
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>enter <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">function</span>(enter_door)
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setAmbientLight</span>(<span style="color:#ae81ff">0x77909d</span>)	
+</span></span><span style="display:flex;"><span>    <span style="color:#57c7ff">setAmbientLight</span>(<span style="color:#ff9f43">0x77909d</span>)	
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    _lightObject1 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">160</span>, <span style="color:#ae81ff">278</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">97</span>)	
-</span></span><span style="display:flex;"><span>    _lightObject2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">527</span>, <span style="color:#ae81ff">278</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">97</span>)
-</span></span><span style="display:flex;"><span>    _lightObject3 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">869</span>, <span style="color:#ae81ff">278</span>, <span style="color:#ae81ff">0.3</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">97</span>)
+</span></span><span style="display:flex;"><span>    _lightObject1 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xfff892</span>, <span style="color:#ff9f43">160</span>, <span style="color:#ff9f43">278</span>, <span style="color:#ff9f43">0.5</span>, <span style="color:#ff9f43">180</span>, <span style="color:#ff9f43">50</span>, <span style="color:#ff9f43">0.15</span>, <span style="color:#ff9f43">250</span>, <span style="color:#ff9f43">0.75</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">97</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject2 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xfff892</span>, <span style="color:#ff9f43">527</span>, <span style="color:#ff9f43">278</span>, <span style="color:#ff9f43">0.5</span>, <span style="color:#ff9f43">180</span>, <span style="color:#ff9f43">50</span>, <span style="color:#ff9f43">0.15</span>, <span style="color:#ff9f43">250</span>, <span style="color:#ff9f43">0.75</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">97</span>)
+</span></span><span style="display:flex;"><span>    _lightObject3 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xfff892</span>, <span style="color:#ff9f43">869</span>, <span style="color:#ff9f43">278</span>, <span style="color:#ff9f43">0.3</span>, <span style="color:#ff9f43">180</span>, <span style="color:#ff9f43">50</span>, <span style="color:#ff9f43">0.15</span>, <span style="color:#ff9f43">250</span>, <span style="color:#ff9f43">0.75</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">97</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    _lightObject4 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">628</span>, <span style="color:#ae81ff">185</span>, <span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.65</span>, <span style="color:#ae81ff">93</span>, <span style="color:#ae81ff">100</span>)	
-</span></span><span style="display:flex;"><span>    _lightObject5 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xfff892</span>, <span style="color:#ae81ff">2133</span>, <span style="color:#ae81ff">178</span>, <span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">118</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject4 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xfff892</span>, <span style="color:#ff9f43">628</span>, <span style="color:#ff9f43">185</span>, <span style="color:#ff9f43">0.4</span>, <span style="color:#ff9f43">180</span>, <span style="color:#ff9f43">60</span>, <span style="color:#ff9f43">0.25</span>, <span style="color:#ff9f43">250</span>, <span style="color:#ff9f43">0.65</span>, <span style="color:#ff9f43">93</span>, <span style="color:#ff9f43">100</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject5 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xfff892</span>, <span style="color:#ff9f43">2133</span>, <span style="color:#ff9f43">178</span>, <span style="color:#ff9f43">0.4</span>, <span style="color:#ff9f43">180</span>, <span style="color:#ff9f43">90</span>, <span style="color:#ff9f43">0.15</span>, <span style="color:#ff9f43">250</span>, <span style="color:#ff9f43">0.25</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">118</span>)	
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    _lightObject6 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xf78a00</span>, <span style="color:#a6e22e">objectPosX</span>(aStreetTrashCan), <span style="color:#ae81ff">114</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">270</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">76</span>, <span style="color:#ae81ff">96</span>)	
-</span></span><span style="display:flex;"><span>    _lightObject7 <span style="color:#f92672">=</span> <span style="color:#a6e22e">lightSetUp</span>(<span style="color:#ae81ff">0xffed93</span>, <span style="color:#a6e22e">objectPosX</span>(aStreetSaleSign), <span style="color:#ae81ff">114</span>, <span style="color:#ae81ff">0.6</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">270</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">68</span>, <span style="color:#ae81ff">97</span>)
+</span></span><span style="display:flex;"><span>    _lightObject6 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xf78a00</span>, <span style="color:#57c7ff">objectPosX</span>(aStreetTrashCan), <span style="color:#ff9f43">114</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">270</span>, <span style="color:#ff9f43">0.15</span>, <span style="color:#ff9f43">80</span>, <span style="color:#ff9f43">0.25</span>, <span style="color:#ff9f43">76</span>, <span style="color:#ff9f43">96</span>)	
+</span></span><span style="display:flex;"><span>    _lightObject7 <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">lightSetUp</span>(<span style="color:#ff9f43">0xffed93</span>, <span style="color:#57c7ff">objectPosX</span>(aStreetSaleSign), <span style="color:#ff9f43">114</span>, <span style="color:#ff9f43">0.6</span>, <span style="color:#ff9f43">0</span>, <span style="color:#ff9f43">270</span>, <span style="color:#ff9f43">0.15</span>, <span style="color:#ff9f43">80</span>, <span style="color:#ff9f43">0.25</span>, <span style="color:#ff9f43">68</span>, <span style="color:#ff9f43">97</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>As you can see you can specify an ambient light color with <code>setAmbientLight</code> function.
 This one is easy ;)
 The following lines setup all the directional lights with an helper function <code>lightSetUp</code> defined in <code>Helpers.nut</code>.</p>
 <p>Here the details of this function:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>function <span style="color:#a6e22e">lightSetUp</span>(color, x, y, brightness, direction, angle, falloff, cutoffRadius, halfRadius, nearY <span style="color:#f92672">=</span> null, farY <span style="color:#f92672">=</span> null) {
-</span></span><span style="display:flex;"><span> local light <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span> light <span style="color:#f92672">=</span> <span style="color:#a6e22e">createLight</span>(color, x, y)		
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightBrightness</span>(light,brightness);		
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightConeDirection</span>(light,direction);	
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightConeAngle</span>(light,angle);			
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightConeFalloff</span>(light,falloff);		
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightCutOffRadius</span>(light,cutoffRadius);	
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightHalfRadius</span>(light,halfRadius);		
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>function <span style="color:#57c7ff">lightSetUp</span>(color, x, y, brightness, direction, angle, falloff, cutoffRadius, halfRadius, nearY <span style="color:#ff6ac1">=</span> null, farY <span style="color:#ff6ac1">=</span> null) {
+</span></span><span style="display:flex;"><span> local light <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>
+</span></span><span style="display:flex;"><span> light <span style="color:#ff6ac1">=</span> <span style="color:#57c7ff">createLight</span>(color, x, y)		
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightBrightness</span>(light,brightness);		
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightConeDirection</span>(light,direction);	
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightConeAngle</span>(light,angle);			
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightConeFalloff</span>(light,falloff);		
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightCutOffRadius</span>(light,cutoffRadius);	
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightHalfRadius</span>(light,halfRadius);		
 </span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">if</span> (nearY <span style="color:#f92672">!=</span> null <span style="color:#f92672">&amp;&amp;</span> farY <span style="color:#f92672">!=</span> null) {
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">lightZRange</span>(light, nearY, farY)
+</span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">if</span> (nearY <span style="color:#ff6ac1">!=</span> null <span style="color:#ff6ac1">&amp;&amp;</span> farY <span style="color:#ff6ac1">!=</span> null) {
+</span></span><span style="display:flex;"><span> <span style="color:#57c7ff">lightZRange</span>(light, nearY, farY)
 </span></span><span style="display:flex;"><span> }
-</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> light
+</span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">return</span> light
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>I tried to find some information on internet how to create this lighting effect, I found of course this well-known blog: <a href="https://blog.thimbleweedpark.com/quickiepal.html">QuickiePal</a> but there is no much explanation.</p>
 <p>After several hours of searching, here is what I found interesting:</p>
@@ -214,94 +219,94 @@ The result is nice, it gives a 3D effect with an additional normal map to give f
 <li>falloff: 0.2</li>
 <li>code direction: 60°</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> LightEffect<span style="color:#f92672">::</span>init()
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#9aedfe">bool</span> LightEffect<span style="color:#ff6ac1">::</span>init()
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (initGLProgramState(<span style="color:#e6db74">&#34;pointlight.frag&#34;</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> (initGLProgramState(<span style="color:#5af78e">&#34;pointlight.frag&#34;</span>))
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        setLightColor(cocos2d<span style="color:#f92672">::</span>Color3B<span style="color:#f92672">::</span>ORANGE);
-</span></span><span style="display:flex;"><span>        setAmbientLightColor(cocos2d<span style="color:#f92672">::</span>Color3B(<span style="color:#ae81ff">127</span>,<span style="color:#ae81ff">127</span>,<span style="color:#ae81ff">127</span>));
-</span></span><span style="display:flex;"><span>        setLightCutoffRadius(<span style="color:#ae81ff">500.0f</span>);
-</span></span><span style="display:flex;"><span>        setLightHalfRadius(<span style="color:#ae81ff">0.5f</span>);
-</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#f92672">-&gt;</span>setUniformFloat(<span style="color:#e6db74">&#34;u_coneCosineHalfConeAngle&#34;</span>, cosf((M_PI<span style="color:#f92672">/</span><span style="color:#ae81ff">180.f</span>) <span style="color:#f92672">*</span>(<span style="color:#ae81ff">40.f</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2.f</span>)));
-</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#f92672">-&gt;</span>setUniformFloat(<span style="color:#e6db74">&#34;u_coneFalloff&#34;</span>, <span style="color:#ae81ff">0.2f</span>);
-</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#f92672">-&gt;</span>setUniformVec2(<span style="color:#e6db74">&#34;u_coneDirection&#34;</span>, Vec2(cosf((M_PI<span style="color:#f92672">/</span><span style="color:#ae81ff">180.f</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>),sinf((M_PI<span style="color:#f92672">/</span><span style="color:#ae81ff">180.f</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>)));
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> true;
+</span></span><span style="display:flex;"><span>        setLightColor(cocos2d<span style="color:#ff6ac1">::</span>Color3B<span style="color:#ff6ac1">::</span>ORANGE);
+</span></span><span style="display:flex;"><span>        setAmbientLightColor(cocos2d<span style="color:#ff6ac1">::</span>Color3B(<span style="color:#ff9f43">127</span>,<span style="color:#ff9f43">127</span>,<span style="color:#ff9f43">127</span>));
+</span></span><span style="display:flex;"><span>        setLightCutoffRadius(<span style="color:#ff9f43">500.0f</span>);
+</span></span><span style="display:flex;"><span>        setLightHalfRadius(<span style="color:#ff9f43">0.5f</span>);
+</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#ff6ac1">-&gt;</span>setUniformFloat(<span style="color:#5af78e">&#34;u_coneCosineHalfConeAngle&#34;</span>, cosf((M_PI<span style="color:#ff6ac1">/</span><span style="color:#ff9f43">180.f</span>) <span style="color:#ff6ac1">*</span>(<span style="color:#ff9f43">40.f</span> <span style="color:#ff6ac1">/</span> <span style="color:#ff9f43">2.f</span>)));
+</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#ff6ac1">-&gt;</span>setUniformFloat(<span style="color:#5af78e">&#34;u_coneFalloff&#34;</span>, <span style="color:#ff9f43">0.2f</span>);
+</span></span><span style="display:flex;"><span>        getGLProgramState()<span style="color:#ff6ac1">-&gt;</span>setUniformVec2(<span style="color:#5af78e">&#34;u_coneDirection&#34;</span>, Vec2(cosf((M_PI<span style="color:#ff6ac1">/</span><span style="color:#ff9f43">180.f</span>)<span style="color:#ff6ac1">*</span><span style="color:#ff9f43">60</span>),sinf((M_PI<span style="color:#ff6ac1">/</span><span style="color:#ff9f43">180.f</span>)<span style="color:#ff6ac1">*</span><span style="color:#ff9f43">60</span>)));
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">return</span> <span style="color:#ff5c57">true</span>;
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">return</span> <span style="color:#ff5c57">false</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>And the shader code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#75715e">#ifdef GL_ES</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">precision</span> <span style="color:#66d9ef">highp</span> <span style="color:#66d9ef">float</span>;
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-glsl" data-lang="glsl"><span style="display:flex;"><span><span style="color:#78787e">#ifdef GL_ES</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">precision</span> <span style="color:#ff6ac1">highp</span> <span style="color:#ff6ac1">float</span>;
+</span></span><span style="display:flex;"><span><span style="color:#78787e">#endif</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">varying</span> <span style="color:#66d9ef">vec2</span> v_texCoord;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">varying</span> <span style="color:#ff6ac1">vec2</span> v_texCoord;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span>  u_contentSize;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec3</span>  u_ambientColor;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span> u_spritePosInSheet;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span> u_spriteSizeRelToSheet;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span> u_spriteOffset;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec2</span>  u_contentSize;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec3</span>  u_ambientColor;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec2</span> u_spritePosInSheet;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec2</span> u_spriteSizeRelToSheet;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec2</span> u_spriteOffset;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec3</span>  u_lightPos;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec3</span>  u_lightColor;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_brightness;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_cutoffRadius;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_halfRadius;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_coneCosineHalfConeAngle;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">float</span> u_coneFalloff;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uniform</span> <span style="color:#66d9ef">vec2</span>  u_coneDirection;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec3</span>  u_lightPos;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec3</span>  u_lightColor;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">float</span> u_brightness;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">float</span> u_cutoffRadius;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">float</span> u_halfRadius;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">float</span> u_coneCosineHalfConeAngle;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">float</span> u_coneFalloff;
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">uniform</span> <span style="color:#ff6ac1">vec2</span>  u_coneDirection;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main(<span style="color:#66d9ef">void</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">void</span> main(<span style="color:#ff6ac1">void</span>)
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> texColor<span style="color:#f92672">=</span>texture2D(CC_Texture0, v_texCoord);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec4</span> texColor<span style="color:#ff6ac1">=</span>texture2D(CC_Texture0, v_texCoord);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> spriteTexCoord <span style="color:#f92672">=</span> (v_texCoord <span style="color:#f92672">-</span> u_spritePosInSheet) <span style="color:#f92672">/</span> u_spriteSizeRelToSheet; <span style="color:#75715e">// [0..1]</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> pixelPos <span style="color:#f92672">=</span> spriteTexCoord <span style="color:#f92672">*</span> u_contentSize <span style="color:#f92672">+</span> u_spriteOffset; <span style="color:#75715e">// [0..origSize]</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> curPixelPosInLocalSpace <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec2</span>(pixelPos.x, u_contentSize.y <span style="color:#f92672">-</span>pixelPos.y);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec2</span> spriteTexCoord <span style="color:#ff6ac1">=</span> (v_texCoord <span style="color:#ff6ac1">-</span> u_spritePosInSheet) <span style="color:#ff6ac1">/</span> u_spriteSizeRelToSheet; <span style="color:#78787e">// [0..1]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec2</span> pixelPos <span style="color:#ff6ac1">=</span> spriteTexCoord <span style="color:#ff6ac1">*</span> u_contentSize <span style="color:#ff6ac1">+</span> u_spriteOffset; <span style="color:#78787e">// [0..origSize]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec2</span> curPixelPosInLocalSpace <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">vec2</span>(pixelPos.x, u_contentSize.y <span style="color:#ff6ac1">-</span>pixelPos.y);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec3</span> diffuse <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec3</span> diffuse <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">vec3</span>(<span style="color:#ff9f43">0</span>,<span style="color:#ff9f43">0</span>,<span style="color:#ff9f43">0</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec2</span> lightVec <span style="color:#f92672">=</span> curPixelPosInLocalSpace.xy <span style="color:#f92672">-</span> u_lightPos.xy;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> coneValue <span style="color:#f92672">=</span> dot( normalize(<span style="color:#f92672">-</span>lightVec), u_coneDirection );
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ( coneValue <span style="color:#f92672">&gt;=</span> u_coneCosineHalfConeAngle )
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec2</span> lightVec <span style="color:#ff6ac1">=</span> curPixelPosInLocalSpace.xy <span style="color:#ff6ac1">-</span> u_lightPos.xy;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">float</span> coneValue <span style="color:#ff6ac1">=</span> dot( normalize(<span style="color:#ff6ac1">-</span>lightVec), u_coneDirection );
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span> ( coneValue <span style="color:#ff6ac1">&gt;=</span> u_coneCosineHalfConeAngle )
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> intercept <span style="color:#f92672">=</span> u_cutoffRadius <span style="color:#f92672">*</span> u_halfRadius;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> dx_1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">/</span> intercept;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> dx_2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">/</span> (u_cutoffRadius <span style="color:#f92672">-</span> intercept);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> offset <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">+</span> intercept <span style="color:#f92672">*</span> dx_2;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> intercept <span style="color:#ff6ac1">=</span> u_cutoffRadius <span style="color:#ff6ac1">*</span> u_halfRadius;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> dx_1 <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0.5</span> <span style="color:#ff6ac1">/</span> intercept;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> dx_2 <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0.5</span> <span style="color:#ff6ac1">/</span> (u_cutoffRadius <span style="color:#ff6ac1">-</span> intercept);
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> offset <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0.5</span> <span style="color:#ff6ac1">+</span> intercept <span style="color:#ff6ac1">*</span> dx_2;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> lightDist <span style="color:#f92672">=</span> length(lightVec);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffTermNear <span style="color:#f92672">=</span> clamp((<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> lightDist <span style="color:#f92672">*</span> dx_1), <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffTermFar  <span style="color:#f92672">=</span> clamp((offset <span style="color:#f92672">-</span> lightDist <span style="color:#f92672">*</span> dx_2), <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffSelect <span style="color:#f92672">=</span> step(intercept, lightDist);
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> falloffTerm <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> falloffSelect) <span style="color:#f92672">*</span> falloffTermNear <span style="color:#f92672">+</span> falloffSelect <span style="color:#f92672">*</span> falloffTermFar;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> spotLight <span style="color:#f92672">=</span> u_brightness <span style="color:#f92672">*</span> falloffTerm;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> lightDist <span style="color:#ff6ac1">=</span> length(lightVec);
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> falloffTermNear <span style="color:#ff6ac1">=</span> clamp((<span style="color:#ff9f43">1.0</span> <span style="color:#ff6ac1">-</span> lightDist <span style="color:#ff6ac1">*</span> dx_1), <span style="color:#ff9f43">0.0</span>, <span style="color:#ff9f43">1.0</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> falloffTermFar  <span style="color:#ff6ac1">=</span> clamp((offset <span style="color:#ff6ac1">-</span> lightDist <span style="color:#ff6ac1">*</span> dx_2), <span style="color:#ff9f43">0.0</span>, <span style="color:#ff9f43">1.0</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> falloffSelect <span style="color:#ff6ac1">=</span> step(intercept, lightDist);
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> falloffTerm <span style="color:#ff6ac1">=</span> (<span style="color:#ff9f43">1.0</span> <span style="color:#ff6ac1">-</span> falloffSelect) <span style="color:#ff6ac1">*</span> falloffTermNear <span style="color:#ff6ac1">+</span> falloffSelect <span style="color:#ff6ac1">*</span> falloffTermFar;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> spotLight <span style="color:#ff6ac1">=</span> u_brightness <span style="color:#ff6ac1">*</span> falloffTerm;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">vec3</span> ltdiffuse <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(u_brightness <span style="color:#f92672">*</span> falloffTerm) <span style="color:#f92672">*</span> u_lightColor;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">vec3</span> ltdiffuse <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">vec3</span>(u_brightness <span style="color:#ff6ac1">*</span> falloffTerm) <span style="color:#ff6ac1">*</span> u_lightColor;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> coneRange <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span><span style="color:#f92672">-</span>u_coneCosineHalfConeAngle;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> halfConeRange <span style="color:#f92672">=</span> coneRange <span style="color:#f92672">*</span> u_coneFalloff;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> conePos   <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span><span style="color:#f92672">-</span>coneValue;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> coneFalloff <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ( conePos <span style="color:#f92672">&gt;</span> halfConeRange )
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> coneRange <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1.0</span><span style="color:#ff6ac1">-</span>u_coneCosineHalfConeAngle;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> halfConeRange <span style="color:#ff6ac1">=</span> coneRange <span style="color:#ff6ac1">*</span> u_coneFalloff;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> conePos   <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1.0</span><span style="color:#ff6ac1">-</span>coneValue;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">float</span> coneFalloff <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1.0</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">if</span> ( conePos <span style="color:#ff6ac1">&gt;</span> halfConeRange )
 </span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            coneFalloff <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span><span style="color:#f92672">-</span>((conePos<span style="color:#f92672">-</span>halfConeRange)<span style="color:#f92672">/</span>(coneRange<span style="color:#f92672">-</span>halfConeRange));
+</span></span><span style="display:flex;"><span>            coneFalloff <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1.0</span><span style="color:#ff6ac1">-</span>((conePos<span style="color:#ff6ac1">-</span>halfConeRange)<span style="color:#ff6ac1">/</span>(coneRange<span style="color:#ff6ac1">-</span>halfConeRange));
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        diffuse <span style="color:#f92672">+=</span> ltdiffuse<span style="color:#f92672">*</span>coneFalloff;
+</span></span><span style="display:flex;"><span>        diffuse <span style="color:#ff6ac1">+=</span> ltdiffuse<span style="color:#ff6ac1">*</span>coneFalloff;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">vec4</span> finalCol <span style="color:#f92672">=</span> texColor;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(finalCol.a <span style="color:#f92672">==</span> <span style="color:#ae81ff">0.0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vec4</span> finalCol <span style="color:#ff6ac1">=</span> texColor;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">if</span>(finalCol.a <span style="color:#ff6ac1">==</span> <span style="color:#ff9f43">0.0</span>)
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        diffuse <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec3</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>);
-</span></span><span style="display:flex;"><span>        finalCol.rgb <span style="color:#f92672">=</span> texColor.rgb;
+</span></span><span style="display:flex;"><span>        diffuse <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">vec3</span>(<span style="color:#ff9f43">0</span>,<span style="color:#ff9f43">0</span>,<span style="color:#ff9f43">0</span>);
+</span></span><span style="display:flex;"><span>        finalCol.rgb <span style="color:#ff6ac1">=</span> texColor.rgb;
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">else</span>
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        finalCol.rgb <span style="color:#f92672">=</span> finalCol.rgb <span style="color:#f92672">*</span> u_ambientColor;
+</span></span><span style="display:flex;"><span>        finalCol.rgb <span style="color:#ff6ac1">=</span> finalCol.rgb <span style="color:#ff6ac1">*</span> u_ambientColor;
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    gl_FragColor <span style="color:#f92672">=</span> <span style="color:#66d9ef">vec4</span>(finalCol.rgb <span style="color:#f92672">+</span> diffuse, finalCol.a);
+</span></span><span style="display:flex;"><span>    gl_FragColor <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">vec4</span>(finalCol.rgb <span style="color:#ff6ac1">+</span> diffuse, finalCol.a);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The next step will be to integrate this effect into engge.</p>
 <h1 id="bonus">Bonus</h1>
@@ -309,10 +314,10 @@ The result is nice, it gives a 3D effect with an additional normal map to give f
 <p><img src="/assets/images/lighting.gif" alt="lighting.gif"></p>
 <p>How is it done ?</p>
 <p>Well this effect is done with only these few lines:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span> script <span style="color:#a6e22e">williesFireLighting</span>() {
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">do</span> {
-</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">lightBrightness</span>(_lightObject6, <span style="color:#a6e22e">random</span>(<span style="color:#ae81ff">0.4</span>,<span style="color:#ae81ff">3.0</span>))
-</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">breakhere</span>(<span style="color:#ae81ff">2</span>)
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-c" data-lang="c"><span style="display:flex;"><span> script <span style="color:#57c7ff">williesFireLighting</span>() {
+</span></span><span style="display:flex;"><span>   <span style="color:#ff6ac1">do</span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#57c7ff">lightBrightness</span>(_lightObject6, <span style="color:#57c7ff">random</span>(<span style="color:#ff9f43">0.4</span>,<span style="color:#ff9f43">3.0</span>))
+</span></span><span style="display:flex;"><span>     <span style="color:#57c7ff">breakhere</span>(<span style="color:#ff9f43">2</span>)
 </span></span><span style="display:flex;"><span>   }
 </span></span><span style="display:flex;"><span> }
 </span></span></code></pre></div><p>Magic isn&rsquo;t it ?</p>
@@ -514,8 +519,7 @@ The result is nice, it gives a 3D effect with an additional normal map to give f
         
 
 
-
-<script type="text/javascript" src="/bundle.min.08b680078a3cf9c69e3dd217a5aa52cfddd4a1d850f8cdff127fdd7421a71f8b2b474be69386f67819edace92273916e7230c9054f38107db9dc6730b3530ab5.js" integrity="sha512-CLaAB4o8&#43;caePdIXpapSz93UodhQ&#43;M3/En/ddCGnH4srR0vmk4b2eBntrOkic5FucjDJBU84EH253Gcws1MKtQ=="></script>
+<script type="text/javascript" src="/bundle.min.4037dc94fd1565c4fd3354e2b4a2d1ff11842c906242435350b4d2d8d6e8b7890da46c0a865173f543a6161c1f4d1c94147f1b907db36489fc2bf5e20d4af75c.js" integrity="sha512-QDfclP0VZcT9M1TitKLR/xGELJBiQkNTULTS2Nbot4kNpGwKhlFz9UOmFhwfTRyUFH8bkH2zZIn8K/XiDUr3XA=="></script>
 
 
 

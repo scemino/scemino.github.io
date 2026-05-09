@@ -110,6 +110,11 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
         </span>
     </span>
 </header>
@@ -225,19 +230,19 @@
 </ul>
 <h2 id="create-the-room-template">Create the room template</h2>
 <p>Create a file and name it <code>ScummBar.wimpy</code> and paste this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;background&#34;</span>: <span style="color:#e6db74">&#34;background&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fullscreen&#34;</span>: <span style="color:#ae81ff">2</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;height&#34;</span>: <span style="color:#ae81ff">172</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ScummBar&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;objects&#34;</span>: [],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;roomsize&#34;</span>: <span style="color:#e6db74">&#34;{640,240}&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;scaling&#34;</span>: [
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;0.6@89&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;0.6@118&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;background&#34;</span>: <span style="color:#5af78e">&#34;background&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;fullscreen&#34;</span>: <span style="color:#ff9f43">2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;height&#34;</span>: <span style="color:#ff9f43">172</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;name&#34;</span>: <span style="color:#5af78e">&#34;ScummBar&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;objects&#34;</span>: [],
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;roomsize&#34;</span>: <span style="color:#5af78e">&#34;{640,240}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;scaling&#34;</span>: [
+</span></span><span style="display:flex;"><span>    <span style="color:#5af78e">&#34;0.6@89&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#5af78e">&#34;0.6@118&#34;</span>
 </span></span><span style="display:flex;"><span>  ],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sheet&#34;</span>: <span style="color:#e6db74">&#34;ScummBarSheet&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;walkboxes&#34;</span>: []
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;sheet&#34;</span>: <span style="color:#5af78e">&#34;ScummBarSheet&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;walkboxes&#34;</span>: []
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Then run <code>WimpyViewer</code> and drag and drop your wimpy file into it, you should see an empty room like this:</p>
 <p><img src="/assets/images/wimpy_empty.png" alt="wimpy_empty"></p>
@@ -282,51 +287,51 @@ To remove a point, click on the right mouse button on a point.</p>
 <p>Now save your room, and that&rsquo;s it for wimpy!</p>
 <h2 id="create-the-room-script">Create the room script</h2>
 <p>Create a script file named <code>ScummBar.nut</code> with its minimal content:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ScummBar <span style="color:#f92672">&lt;-</span> 
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ScummBar <span style="color:#ff6ac1">&lt;-</span> 
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span> background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ScummBar&#34;</span>
-</span></span><span style="display:flex;"><span> enter <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(door) 
+</span></span><span style="display:flex;"><span> background <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;ScummBar&#34;</span>
+</span></span><span style="display:flex;"><span> enter <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>(door) 
 </span></span><span style="display:flex;"><span> {
 </span></span><span style="display:flex;"><span> }
-</span></span><span style="display:flex;"><span> exit <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span> exit <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span> {
 </span></span><span style="display:flex;"><span> }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>A <code>.nut</code> file is a squirrel script file, squirrel is a language similar to <code>lua</code>.
 In this file, we declare a table called <code>ScummBar</code> (the name of the room), we defined a property <code>background</code> set to <code>ScummBar</code> and 2 functions <code>enter</code> and <code>exit</code>, when the room becomes the current room, the <code>enter</code> function is called.</p>
 <p>Now we want to be able to interact with the door, to do this we need to declare inside the room, a table, this table should be named <code>scummBarDoor</code>, the exact same name as we declare the door in the wimpy file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>scummBarDoor <span style="color:#f92672">=</span>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>scummBarDoor <span style="color:#ff6ac1">=</span>
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;door&#34;</span>
-</span></span><span style="display:flex;"><span>    flags <span style="color:#f92672">=</span> DOOR_BACK
-</span></span><span style="display:flex;"><span>    defaultVerb <span style="color:#f92672">=</span> VERB_OPEN
-</span></span><span style="display:flex;"><span>    autoclose <span style="color:#f92672">=</span> YES
+</span></span><span style="display:flex;"><span>    name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;door&#34;</span>
+</span></span><span style="display:flex;"><span>    flags <span style="color:#ff6ac1">=</span> DOOR_BACK
+</span></span><span style="display:flex;"><span>    defaultVerb <span style="color:#ff6ac1">=</span> VERB_OPEN
+</span></span><span style="display:flex;"><span>    autoclose <span style="color:#ff6ac1">=</span> YES
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The property <code>name</code> defined the text that the cursor will display when it will be over the door&rsquo;s hotspot.
 <code>flags</code> set to <code>DOOR_BACK</code> indicates the direction of the cursor when it will be over it.</p>
 <p>The property <code>defaultVerb</code> is handy to use a quickly an action, when you press the right mouse button button on the door, it will open it when <code>defaultVerb</code> is set to <code>VERB_OPEN</code>.</p>
 <p><code>autoclose</code> is specific to a door object, when an actor open the door, the door will be automatically closed after.</p>
 <p>Now we need to define what to do if we execute the <code>VERB_OPEN</code> on this door, and what to do if we execute <code>VERB_CLOSE</code>, you can also add what to do when the actor walks directly to the door, and he would be useful to exit from the current room to go to the other one (in this example, we will go to the main street).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>verbOpen <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>verbOpen <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    openDoors(this, MainStreet.mainStreetDinerDoor)
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>verbClose <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>verbClose <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    closeDoors(this, MainStreet.mainStreetDinerDoor)
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>verbWalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>verbWalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    exitRoomFromDoor(this, MainStreet.mainStreetDinerDoor)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>If you want your player be able to talk to someone, just add a table to the &ldquo;object&rdquo; you want to talk to:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>pirate4 <span style="color:#f92672">=</span>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>pirate4 <span style="color:#ff6ac1">=</span>
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
-</span></span><span style="display:flex;"><span>    flags <span style="color:#f92672">=</span> TALKABLE
-</span></span><span style="display:flex;"><span>    defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
-</span></span><span style="display:flex;"><span>    verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-</span></span><span style="display:flex;"><span>        sayLine(<span style="color:#e6db74">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
+</span></span><span style="display:flex;"><span>    name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>    flags <span style="color:#ff6ac1">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>    defaultVerb <span style="color:#ff6ac1">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>    verbTalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>() {
+</span></span><span style="display:flex;"><span>        sayLine(<span style="color:#5af78e">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>You have to set the property <code>flags</code> to <code>TALKABLE</code> to be able to talk to this pirate, set the <code>defaultVerb</code> to <code>VERB_TALKTO</code> and now you can decide what to do when the actor talks to this pirate.
@@ -334,119 +339,119 @@ In this example, we want the actor to say &ldquo;I don&rsquo;t think it&rsquo;s 
 Nice 😎</p>
 <p>OK now you have enough information to add the other interactions.
 Here is my final script:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ScummBar <span style="color:#f92672">&lt;-</span> 
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ScummBar <span style="color:#ff6ac1">&lt;-</span> 
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    background <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ScummBar&#34;</span>
-</span></span><span style="display:flex;"><span>    enter <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(door) 
+</span></span><span style="display:flex;"><span>    background <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;ScummBar&#34;</span>
+</span></span><span style="display:flex;"><span>    enter <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>(door) 
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        loopObjectState(chandelier, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(chain, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(fire, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate1, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate2, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate3, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate4, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate5, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate6, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate7, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate8, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(pirate9, <span style="color:#ae81ff">0</span>)
-</span></span><span style="display:flex;"><span>        loopObjectState(dog, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(chandelier, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(chain, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(fire, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate1, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate2, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate3, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate4, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate5, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate6, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate7, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate8, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(pirate9, <span style="color:#ff9f43">0</span>)
+</span></span><span style="display:flex;"><span>        loopObjectState(dog, <span style="color:#ff9f43">0</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    exit <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    chandelier <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    fire <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    pirate4 <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
-</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
-</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
-</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    pirate5 <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirates&#34;</span>
-</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
-</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
-</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I don&#39;t want to bother them.&#34;</span>,<span style="color:#e6db74">&#34;They&#39;re busy listening to the guy on the left.&#34;</span>)
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    pirate8 <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
-</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
-</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
-</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I think they&#39;re busy.&#34;</span>)
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    pirate9 <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pirate&#34;</span>
-</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
-</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
-</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    dog <span style="color:#f92672">=</span>
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dog&#34;</span>
-</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> TALKABLE
-</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_TALKTO
-</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
-</span></span><span style="display:flex;"><span>            sayLine(dog,<span style="color:#e6db74">&#34;Grrrr.&#34;</span>)
-</span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    scummBarDockDoor <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    chandelier <span style="color:#ff6ac1">=</span>
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;door&#34;</span>
-</span></span><span style="display:flex;"><span>        flags <span style="color:#f92672">=</span> DOOR_BACK
-</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#f92672">=</span> VERB_OPEN
-</span></span><span style="display:flex;"><span>        autoclose <span style="color:#f92672">=</span> YES
-</span></span><span style="display:flex;"><span>        verbLookAt <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;It&#39;s a door.&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    fire <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate4 <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#ff6ac1">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#ff6ac1">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbPickUp <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;I can&#39;t! It&#39;s been glued to the floor.&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate5 <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;pirates&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#ff6ac1">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#ff6ac1">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;I don&#39;t want to bother them.&#34;</span>,<span style="color:#5af78e">&#34;They&#39;re busy listening to the guy on the left.&#34;</span>)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbUse <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(obj<span style="color:#f92672">=</span>null)
-</span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;No way!&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate8 <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#ff6ac1">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#ff6ac1">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;I think they&#39;re busy.&#34;</span>)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbWalkTo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    pirate9 <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;pirate&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#ff6ac1">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#ff6ac1">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;I don&#39;t think it&#39;s wise to wake a sleeping pirate.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    dog <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;dog&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#ff6ac1">=</span> TALKABLE
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#ff6ac1">=</span> VERB_TALKTO
+</span></span><span style="display:flex;"><span>        verbTalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>() {
+</span></span><span style="display:flex;"><span>            sayLine(dog,<span style="color:#5af78e">&#34;Grrrr.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    scummBarDockDoor <span style="color:#ff6ac1">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        name <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;door&#34;</span>
+</span></span><span style="display:flex;"><span>        flags <span style="color:#ff6ac1">=</span> DOOR_BACK
+</span></span><span style="display:flex;"><span>        defaultVerb <span style="color:#ff6ac1">=</span> VERB_OPEN
+</span></span><span style="display:flex;"><span>        autoclose <span style="color:#ff6ac1">=</span> YES
+</span></span><span style="display:flex;"><span>        verbLookAt <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;It&#39;s a door.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbPickUp <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;I can&#39;t! It&#39;s been glued to the floor.&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbUse <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>(obj<span style="color:#ff6ac1">=</span>null)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;No way!&#34;</span>)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        verbWalkTo <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            exitRoomFromDoor(this, Dock.dockScummBarDoor)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbOpen <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        verbOpen <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            openDoors(this, Dock.dockScummBarDoor)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbClose <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        verbClose <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            closeDoors(this, Dock.dockScummBarDoor)
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbPush <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        verbPush <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            verbOpen()
 </span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        verbPull <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        verbPull <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">function</span>()
 </span></span><span style="display:flex;"><span>        {
 </span></span><span style="display:flex;"><span>            noReach()
-</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#e6db74">&#34;There&#39;s no handle on the door.&#34;</span>)
+</span></span><span style="display:flex;"><span>            sayLine(<span style="color:#5af78e">&#34;There&#39;s no handle on the door.&#34;</span>)
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
@@ -462,23 +467,23 @@ In this tutorial I will use <code>ggpack tools</code>:</p>
 <li><code>ScummBar.nut</code> (rename it to <code>ScummBar.bnut</code>)</li>
 </ul>
 <p>We are almost done, we need to declare our room in the <code>DefineRooms.bnut</code>, add this statement:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>include(<span style="color:#e6db74">&#34;ScummBar.nut&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>include(<span style="color:#5af78e">&#34;ScummBar.nut&#34;</span>)
 </span></span><span style="display:flex;"><span>defineRoom(ScummBar)
 </span></span></code></pre></div><p>Now we want to start the game directly in the ScummBar, edit the <code>boot.bnut</code> and locate this code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (do_opening) {
-</span></span><span style="display:flex;"><span>  g.openingScene <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#ff6ac1">if</span> (do_opening) {
+</span></span><span style="display:flex;"><span>  g.openingScene <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>  startglobalthread(newOpeningScene)
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">return</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Modify it to:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (do_opening) {
-</span></span><span style="display:flex;"><span>  g.openingScene <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">//</span>startglobalthread(newOpeningScene)
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#ff6ac1">if</span> (do_opening) {
+</span></span><span style="display:flex;"><span>  g.openingScene <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">//</span>startglobalthread(newOpeningScene)
 </span></span><span style="display:flex;"><span>  startglobalthread(enterScummBar)
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">return</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>And add this code before</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span> script enterScummBar() {
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span> script enterScummBar() {
 </span></span><span style="display:flex;"><span>  actorSlotSelectable(ray, ON)
 </span></span><span style="display:flex;"><span>  actorSlotSelectable(reyes, ON)
 </span></span><span style="display:flex;"><span>  actorSlotSelectable(ON)
@@ -703,8 +708,7 @@ Don&rsquo;t be shy if you have any questions, I will try to answer them, or if y
         
 
 
-
-<script type="text/javascript" src="/bundle.min.08b680078a3cf9c69e3dd217a5aa52cfddd4a1d850f8cdff127fdd7421a71f8b2b474be69386f67819edace92273916e7230c9054f38107db9dc6730b3530ab5.js" integrity="sha512-CLaAB4o8&#43;caePdIXpapSz93UodhQ&#43;M3/En/ddCGnH4srR0vmk4b2eBntrOkic5FucjDJBU84EH253Gcws1MKtQ=="></script>
+<script type="text/javascript" src="/bundle.min.4037dc94fd1565c4fd3354e2b4a2d1ff11842c906242435350b4d2d8d6e8b7890da46c0a865173f543a6161c1f4d1c94147f1b907db36489fc2bf5e20d4af75c.js" integrity="sha512-QDfclP0VZcT9M1TitKLR/xGELJBiQkNTULTS2Nbot4kNpGwKhlFz9UOmFhwfTRyUFH8bkH2zZIn8K/XiDUr3XA=="></script>
 
 
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rtmi on Le blog de scemino</title>
+    <link>//localhost:1313/fr/tags/rtmi/</link>
+    <description>Recent content in Rtmi on Le blog de scemino</description>
+    <generator>Hugo</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Sun, 12 Apr 2026 17:37:16 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/fr/tags/rtmi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Return to Monkey Island</title>
+      <link>//localhost:1313/fr/posts/rtmi/</link>
+      <pubDate>Sun, 12 Apr 2026 17:37:16 +0200</pubDate>
+      <guid>//localhost:1313/fr/posts/rtmi/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Etant fan depuis ma jeune enfance des jeux d&amp;rsquo;aventure Monkey Island 1 et 2, ces jeux font partie de ces jeux que je n&amp;rsquo;oublierai jamais.&#xA;J&amp;rsquo;étais particulièrement content d&amp;rsquo;apprendre que Ron Gilbert s&amp;rsquo;apprêtait à sortir &amp;ldquo;Return to Monkey Island&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/assets/images/rtmi.jpg&#34; alt=&#34;walkboxes1.png&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2022-les-premieres-expérimentations&#34;&gt;2022 Les premieres expérimentations&lt;/h2&gt;&#xA;&lt;p&gt;Et forcément après avoir travaillé plusieurs année sur &lt;code&gt;Thimbleweed Park&lt;/code&gt;, j&amp;rsquo;étais bien sûr curieux de savoir comment ce jeu pouvait fonctionner.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai vite découvert des outils permettant de lister le contenu des fichiers ressource Weird.ggpack*&#xA;Le fait de lister ces fichiers permet d&amp;rsquo;en apprendre beaucoup sur le moteur du jeu, surtout que certains fichiers n&amp;rsquo;étaient pas inconnus pour moi, les fichiers avec l&amp;rsquo;extension: .ggpack, .tsv, .txt, .json, .wimpy, .lip, .png, .yack étaient déjà utilisés dans &lt;code&gt;Thimbleweed Park&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

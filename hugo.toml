@@ -3,10 +3,13 @@ title = "scemino blog"
 languageCode = "en-us"
 enableEmoji     = true
 disableRSS     = false
+defaultContentLanguage = 'en'
 
 [params]
   enableSharingButtons = true
   enableReadingTime = true
+#  enableGlobalLanguageMenu = true
+  enableThemeToggle = true
 
   [params.author]
     name = "Scemino"
@@ -30,6 +33,8 @@ disableRSS     = false
   
 [languages]
   [languages.en]
+    label = 'English'
+    locale = 'en-US'
     title = "scemino blog"
 
   [languages.en.params]
@@ -40,8 +45,26 @@ disableRSS     = false
       logoCursorDisabled = true
       logoHomeLink = "/posts"
 
+#  [languages.fr]
+#    label = 'Français'
+#    locale = 'fr-FR'
+#    title = "Le blog de scemino"
+#
+#    [languages.fr.params]
+#      subtitle  = "Un blog à propos de mes differents projets"
+#
+#    [languages.fr.params.logo]
+#      logoText = "scemino blog"
+#      logoCursorDisabled = true
+#      logoHomeLink = "/fr/posts"
+
   # And you can even create generic menu
   [[menu.main]]
     identifier = "blog"
     name       = "Posts"
     url        = "/posts"
+
+[markup]
+  [markup.highlight]
+    style = 'base16-snazzy'
+    

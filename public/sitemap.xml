@@ -92,6 +92,8 @@
     <loc>//localhost:1313/posts/2020-01-01-a-welcome/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/posts/receivekeydown/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>

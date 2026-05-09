@@ -110,6 +110,11 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
         </span>
     </span>
 </header>
@@ -149,104 +154,104 @@ In this post I will explain the internal format and the data used in these saveg
 <p><img src="/assets/images/savegames.png" alt="savegames.png"></p>
 <h2 id="the-format">The format</h2>
 <p>This format can be represented by a json struture, here is an example, a lot of data have been removed to make it clear:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;actors&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;bankmanager&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_costume&#34;</span>: <span style="color:#e6db74">&#34;BankMgrAnimation&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_dir&#34;</span>: <span style="color:#ae81ff">2</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_lockFacing&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_pos&#34;</span>: <span style="color:#e6db74">&#34;{541,61}&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_roomKey&#34;</span>: <span style="color:#e6db74">&#34;Bank&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;defaultVerb&#34;</span>: <span style="color:#ae81ff">3</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;detective&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;dialog&#34;</span>: <span style="color:#66d9ef">null</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;actors&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;bankmanager&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;_costume&#34;</span>: <span style="color:#5af78e">&#34;BankMgrAnimation&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;_dir&#34;</span>: <span style="color:#ff9f43">2</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;_lockFacing&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;_pos&#34;</span>: <span style="color:#5af78e">&#34;{541,61}&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;_roomKey&#34;</span>: <span style="color:#5af78e">&#34;Bank&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;defaultVerb&#34;</span>: <span style="color:#ff9f43">3</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;detective&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;dialog&#34;</span>: <span style="color:#ff6ac1">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#78787e">// ...
 </span></span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;callbacks&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;callbacks&#34;</span>: [
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;callbacks&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;callbacks&#34;</span>: [
 </span></span><span style="display:flex;"><span>      {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;function&#34;</span>: <span style="color:#e6db74">&#34;analyticsCallback&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;guid&#34;</span>: <span style="color:#ae81ff">8000217</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;time&#34;</span>: <span style="color:#ae81ff">29920</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;function&#34;</span>: <span style="color:#5af78e">&#34;analyticsCallback&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;guid&#34;</span>: <span style="color:#ff9f43">8000217</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;time&#34;</span>: <span style="color:#ff9f43">29920</span>
 </span></span><span style="display:flex;"><span>      }
 </span></span><span style="display:flex;"><span>    ],
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;nextGuid&#34;</span>: <span style="color:#ae81ff">8000218</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;nextGuid&#34;</span>: <span style="color:#ff9f43">8000218</span>
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;currentRoom&#34;</span>: <span style="color:#e6db74">&#34;TrailerAlley&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dialog&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;#ChetAgentStreetDialog14reyes&#34;</span>: <span style="color:#ae81ff">2</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;currentRoom&#34;</span>: <span style="color:#5af78e">&#34;TrailerAlley&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;dialog&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;#ChetAgentStreetDialog14reyes&#34;</span>: <span style="color:#ff9f43">2</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e">// ...
 </span></span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;easy_mode&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gameGUID&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gameScene&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;actorsSelectable&#34;</span>: <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;actorsTempUnselectable&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;forceTalkieText&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;selectableActors&#34;</span>: [
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;easy_mode&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;gameGUID&#34;</span>: <span style="color:#5af78e">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;gameScene&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;actorsSelectable&#34;</span>: <span style="color:#ff9f43">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;actorsTempUnselectable&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;forceTalkieText&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;selectableActors&#34;</span>: [
 </span></span><span style="display:flex;"><span>      {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;_actorKey&#34;</span>: <span style="color:#e6db74">&#34;ray&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;selectable&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;_actorKey&#34;</span>: <span style="color:#5af78e">&#34;ray&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;selectable&#34;</span>: <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>      },
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...
+</span></span><span style="display:flex;"><span>      <span style="color:#78787e">// ...
 </span></span></span><span style="display:flex;"><span>    ]
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;gameTime&#34;</span>: <span style="color:#ae81ff">29738</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;globals&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;abducted_agent&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;_actorKey&#34;</span>: <span style="color:#e6db74">&#34;ray&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;gameTime&#34;</span>: <span style="color:#ff9f43">29738</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;globals&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;abducted_agent&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;_actorKey&#34;</span>: <span style="color:#5af78e">&#34;ray&#34;</span>
 </span></span><span style="display:flex;"><span>    },
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;abducted_agent_seen&#34;</span>: <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;act1&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;abducted_agent_seen&#34;</span>: <span style="color:#ff9f43">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;act1&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e">// ...
 </span></span></span><span style="display:flex;"><span>      },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inputState&#34;</span>: <span style="color:#ae81ff">101</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inventory&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;slots&#34;</span>: [
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;inputState&#34;</span>: <span style="color:#ff9f43">101</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;inventory&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;slots&#34;</span>: [
 </span></span><span style="display:flex;"><span>      {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;jiggle&#34;</span>: [
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;jiggle&#34;</span>: [
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">1</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#ff9f43">0</span>
 </span></span><span style="display:flex;"><span>        ],
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;objects&#34;</span>: [
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;raysBadge&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;raysNotebook&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;countyMap1&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;cellPhone&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;fingerprintKit&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;speckOfDustRay&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;rayHotelKeycard&#34;</span>,
-</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;pillowTronTool&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;objects&#34;</span>: [
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;raysBadge&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;raysNotebook&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;countyMap1&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;cellPhone&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;fingerprintKit&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;speckOfDustRay&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;rayHotelKeycard&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;pillowTronTool&#34;</span>
 </span></span><span style="display:flex;"><span>        ],
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;scroll&#34;</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;scroll&#34;</span>: <span style="color:#ff9f43">0</span>
 </span></span><span style="display:flex;"><span>      },
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// ...
+</span></span><span style="display:flex;"><span>      <span style="color:#78787e">// ...
 </span></span></span><span style="display:flex;"><span>    ]
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;objects&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;aStreetArcadeDoorWF&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;flags&#34;</span>: <span style="color:#ae81ff">1073742912</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;@29000&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;objects&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;aStreetArcadeDoorWF&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;flags&#34;</span>: <span style="color:#ff9f43">1073742912</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;name&#34;</span>: <span style="color:#5af78e">&#34;@29000&#34;</span>
 </span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;rooms&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;AStreet&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;background&#34;</span>: <span style="color:#e6db74">&#34;AStreet&#34;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;speck_of_dust&#34;</span>: <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;speck_of_dust_collected&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;rooms&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;AStreet&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;background&#34;</span>: <span style="color:#5af78e">&#34;AStreet&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;speck_of_dust&#34;</span>: <span style="color:#ff9f43">1</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">&#34;speck_of_dust_collected&#34;</span>: <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;savebuild&#34;</span>: <span style="color:#ae81ff">0</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;savetime&#34;</span>: <span style="color:#ae81ff">1587988116</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;selectedActor&#34;</span>: <span style="color:#e6db74">&#34;ransome&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;savebuild&#34;</span>: <span style="color:#ff9f43">0</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;savetime&#34;</span>: <span style="color:#ff9f43">1587988116</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;selectedActor&#34;</span>: <span style="color:#5af78e">&#34;ransome&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;version&#34;</span>: <span style="color:#ff9f43">2</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="actors">Actors</h3>
 <p>For each actor the properties are saved, there are 2 types of properties:</p>
@@ -259,17 +264,17 @@ In this post I will explain the internal format and the data used in these saveg
 These callbacks are added from a script file, for example:</p>
 <pre tabindex="0"><code class="language-squirrel" data-lang="squirrel">addCallback(60*5, analyticsCallback)
 </code></pre><p>With this example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;callbacks&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;callbacks&#34;</span>: [
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#5af78e">&#34;callbacks&#34;</span><span style="color:#ff5c57">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;callbacks&#34;</span>: [
 </span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;function&#34;</span>: <span style="color:#e6db74">&#34;closeElevatorDelay&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;guid&#34;</span>: <span style="color:#ae81ff">8000036</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;param&#34;</span>: <span style="color:#ae81ff">5</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;time&#34;</span>: <span style="color:#ae81ff">15186</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;function&#34;</span>: <span style="color:#5af78e">&#34;closeElevatorDelay&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;guid&#34;</span>: <span style="color:#ff9f43">8000036</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;param&#34;</span>: <span style="color:#ff9f43">5</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">&#34;time&#34;</span>: <span style="color:#ff9f43">15186</span>
 </span></span><span style="display:flex;"><span>      }
 </span></span><span style="display:flex;"><span>  ],
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nextGuid&#34;</span>: <span style="color:#ae81ff">8000218</span>
-</span></span><span style="display:flex;"><span>}<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">&#34;nextGuid&#34;</span>: <span style="color:#ff9f43">8000218</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#ff5c57">,</span>
 </span></span></code></pre></div><ul>
 <li><code>function</code>: name of the function to call when time is elapsed</li>
 <li><code>param</code>: optional parameter given to the function when it is called</li>
@@ -280,10 +285,10 @@ These callbacks are added from a script file, for example:</p>
 <h3 id="dialogs">Dialogs</h3>
 <p>As you know, we have to save the state of the dialogs in order to know what choices have been displayed or chosen.</p>
 <p>This state is described like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;dialog&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;#ChetAgentStreetDialog14reyes&#34;</span>: <span style="color:#ae81ff">2</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span>  }<span style="color:#960050;background-color:#1e0010">,</span>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#5af78e">&#34;dialog&#34;</span><span style="color:#ff5c57">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">&#34;#ChetAgentStreetDialog14reyes&#34;</span>: <span style="color:#ff9f43">2</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#78787e">// ...
+</span></span></span><span style="display:flex;"><span>  }<span style="color:#ff5c57">,</span>
 </span></span></code></pre></div><p>Each line corresponds to a condition of a dialog, the format can be described like this:
 <code>&quot;[mode][dialog_name][line_number][actor]&quot;: [value]</code></p>
 <ul>
@@ -503,8 +508,7 @@ $: showonceever
         
 
 
-
-<script type="text/javascript" src="/bundle.min.08b680078a3cf9c69e3dd217a5aa52cfddd4a1d850f8cdff127fdd7421a71f8b2b474be69386f67819edace92273916e7230c9054f38107db9dc6730b3530ab5.js" integrity="sha512-CLaAB4o8&#43;caePdIXpapSz93UodhQ&#43;M3/En/ddCGnH4srR0vmk4b2eBntrOkic5FucjDJBU84EH253Gcws1MKtQ=="></script>
+<script type="text/javascript" src="/bundle.min.4037dc94fd1565c4fd3354e2b4a2d1ff11842c906242435350b4d2d8d6e8b7890da46c0a865173f543a6161c1f4d1c94147f1b907db36489fc2bf5e20d4af75c.js" integrity="sha512-QDfclP0VZcT9M1TitKLR/xGELJBiQkNTULTS2Nbot4kNpGwKhlFz9UOmFhwfTRyUFH8bkH2zZIn8K/XiDUr3XA=="></script>
 
 
 
